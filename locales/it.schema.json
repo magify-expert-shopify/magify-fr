@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Pulsante terziario",
+    "dev_mode": "Modalità sviluppatore",
+    "tag": "Tag",
+    "tag_list": "Elenco tag",
     "404": "404",
     "borders": "Bordi",
     "collapsible_row": "Riga comprimibile",
@@ -26,6 +39,7 @@
     "submit_button": "Pulsante di invio",
     "grid_layout_selector": "Selettore del layout a griglia",
     "image": "Immagine",
+    "image_and_videos": "Immagini e video",
     "list_items": "Voci dell'elenco",
     "facets": "Filtri",
     "variants": "Varianti",
@@ -77,6 +91,8 @@
     "footer_utilities": "Utilità del footer",
     "group": "Gruppo",
     "header": "Header",
+    "header_ctas": "CTA dell'header",
+    "radio_card": "Scheda opzione",
     "heading": "Intestazione",
     "icons": "Icone",
     "image_with_text": "Immagine con testo",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Presentazione a livelli"
   },
+  "presets": {
+    "tag": "Tag",
+    "tag_list": "Elenco tag",
+    "radio_card": "Scheda opzione"
+  },
   "settings": {
+    "logo_type": "Tipo di logo",
+    "svg_logo_filename": "Nome file del logo SVG",
+    "aria_label": "Etichetta ARIA",
+    "hide_on_mobile": "Nascondi su mobile",
+    "hide_on_desktop": "Nascondi su desktop",
+    "use_grid_on_mobile": "Usa griglia su mobile",
+    "use_grid_on_desktop": "Usa griglia su desktop",
+    "custom_condition": "Condizione personalizzata",
+    "display_mode": "Modalita di visualizzazione",
+    "dev_mode_enabled": "Abilita modalità sviluppatore",
+    "list_type": "Tipo di elenco",
+    "disabled": "Disabilitato",
+    "html_tag": "Tag HTML",
+    "class": "Classe",
+    "fetch_priority": "Priorità di caricamento",
+    "name": "Nome",
+    "value": "Valore",
+    "checked": "Selezionato per impostazione predefinita",
+    "id": "ID",
     "alignment": "Allineamento",
     "autoplay": "Riproduzione automatica",
     "background": "Sfondo",
@@ -214,6 +254,7 @@
     "gap": "Spaziatura",
     "geometric_translate_y": "Traslazione geometrica Y",
     "heading": "Intestazione",
+    "subheadings": "Sottotitolo",
     "icon": "Icona",
     "image": "Immagine",
     "image_icon": "Icona immagine",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "Apri nota al venditore per impostazione predefinita",
     "gift_card_form": "Modulo buono regalo",
     "add_to_cart_animation": "Aggiungi al carrello",
+    "text_animation_enabled": "Attiva animazione del testo",
     "custom_link": "Link personalizzato",
     "product_custom_property": {
       "heading": "Intestazione",
@@ -581,9 +623,16 @@
     "actions_display_style": "Stile menu"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Condizione personalizzata",
+    "all_pages": "Tutte le pagine",
+    "homepage_only": "Solo home page",
+    "ol": "Elenco numerato",
+    "ul": "Elenco puntato",
     "apple": "Mela",
     "arrow": "Freccia",
     "auto": "Automatico",
+    "low": "Bassa",
     "banana": "Banana",
     "bottle": "Bottiglia",
     "box": "Riquadro",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "Puntina da mappa",
     "medium": "Medio",
+    "high": "Alta",
     "none": "Nessuno",
     "numbers": "Numeri",
     "nut_free": "Senza frutta a guscio",
@@ -638,6 +688,7 @@
     "paw_print": "Impronta di zampa",
     "pepper": "Pepe",
     "perfume": "Profumo",
+    "phone": "Telefono",
     "pinterest": "Pinterest",
     "plane": "Aereo",
     "plant": "Pianta",
@@ -819,6 +870,7 @@
     "below_image": "Sotto l'immagine",
     "button_primary": "Pulsante principale",
     "button_secondary": "Pulsante secondario",
+    "button_tertiary": "Pulsante terziario",
     "hidden": "Non in elenco",
     "on_image": "Sull'immagine",
     "spotlight": "Spotlight",
@@ -845,6 +897,7 @@
     "social_vimeo": "Social: Vimeo",
     "social_youtube": "Social: YouTube",
     "subheading": "Sottotitolo",
+    "subheadings": "Sottotitolo",
     "blur": "Sfumatura",
     "lift": "Sollevato",
     "reveal": "Rivela",
@@ -856,6 +909,7 @@
     "icons": "Icone"
   },
   "content": {
+    "dev_mode": "Modalità sviluppatore",
     "advanced": "Avanzate",
     "background_image": "Immagine di sfondo",
     "background_video": "Video di sfondo",
@@ -927,6 +981,7 @@
     "colors": "Colori",
     "collection_page": "Pagina di collezione",
     "customer_account": "Account cliente",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Modifica la collezione per lo stato vuoto nelle [impostazioni del tema](/editor?context=theme&category=search)",
     "grid_layout": "Layout a griglia",
     "home_page": "Homepage",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Scopri la nostra collezione curata con i nostri articoli preferiti, scelti per unire stile e qualità.</p>"
   },
   "text_defaults": {
+    "tag": "Tag",
     "button_label": "Acquista ora",
     "collapsible_row": "Riga comprimibile",
     "heading": "Intestazione",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Nuovi arrivi"
   },
   "info": {
+    "logo_type": "Scegli se usare un'immagine o un file SVG per il logo.",
+    "svg_logo_filename": "Inserisci il nome del file SVG negli assets, ad esempio brand.",
+    "custom_condition": "Restituisci true per mostrare la sezione, altrimenti false.",
+    "dev_mode": "Consente l’accesso a più opzioni, inclusa la possibilità di iniettare codice dalle impostazioni.",
     "carousel_layout_on_mobile": "Sui dispositivi mobili viene sempre utilizzato il carosello.",
     "video_alt_text": "Descrivi il video per gli utenti di tecnologie assistive",
     "video_autoplay": "I video saranno senza audio per impostazione predefinita",

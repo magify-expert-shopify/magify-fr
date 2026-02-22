@@ -1,0 +1,38 @@
+<{{ block.settings.list_type }} class="tags {{ block.settings.class }}s">
+  {% content_for 'blocks' %}
+</{{ block.settings.list_type }}>
+
+{% schema %}
+{
+  "name": "t:names.tag_list",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "tag"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "list_type",
+      "label": "t:settings.list_type",
+      "options": [
+        {
+          "value": "ul",
+          "label": "t:options.ul"
+        },
+        {
+          "value": "ol",
+          "label": "t:options.ol"
+        }
+      ],
+      "default": "ul"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:presets.tag_list"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,319 @@
+{% doc %}
+  Header CTA block.
+
+  Renders up to 3 configurable CTA buttons.
+  When multiple CTAs overflow available width, they collapse into a dropdown.
+{% enddoc %}
+
+{% liquid
+  assign cta_count = 0
+  if block.settings.label != blank
+    assign cta_count = cta_count | plus: 1
+  endif
+  if block.settings.label_2 != blank
+    assign cta_count = cta_count | plus: 1
+  endif
+  if block.settings.label_3 != blank
+    assign cta_count = cta_count | plus: 1
+  endif
+%}
+
+{% capture cta_links %}
+  {% render 'header-cta-item',
+    label: block.settings.label_1,
+    link: block.settings.link_1,
+    style_class: block.settings.style_class_1,
+    open_new: block.settings.open_in_new_tab_1
+  %}
+  {% render 'header-cta-item',
+    label: block.settings.label_2,
+    link: block.settings.link_2,
+    style_class: block.settings.style_class_2,
+    open_new: block.settings.open_in_new_tab_2
+  %}
+  {% render 'header-cta-item',
+    label: block.settings.label_3,
+    link: block.settings.link_3,
+    style_class: block.settings.style_class_3,
+    open_new: block.settings.open_in_new_tab_3
+  %}
+{% endcapture %}
+
+<div
+  class="header-ctas"
+  data-header-ctas
+  data-cta-count="{{ cta_count }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="header-ctas__inline" data-cta-inline>
+    {{ cta_links }}
+  </div>
+
+  <details
+    class="header-ctas__dropdown"
+    data-cta-dropdown
+  >
+    <summary class="button button-secondary header-ctas__dropdown-button">
+      <span>{{ 'actions.more' | t }}</span>
+      <span class="svg-wrapper icon-caret">
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </span>
+    </summary>
+    <div class="header-ctas__dropdown-menu">
+      {{ cta_links }}
+    </div>
+  </details>
+</div>
+
+{% javascript %}
+  (() => {
+    const initHeaderCtas = (container) => {
+      const inline = container.querySelector('[data-cta-inline]');
+      const dropdown = container.querySelector('[data-cta-dropdown]');
+
+      if (!inline || !dropdown) return;
+
+      const ctaCount = Number(container.dataset.ctaCount || '0');
+
+      const updateOverflow = () => {
+        if (ctaCount < 2) {
+          container.removeAttribute('data-overflow');
+          dropdown.open = false;
+          return;
+        }
+
+        container.removeAttribute('data-overflow');
+
+        const hasOverflow = inline.scrollWidth > inline.clientWidth + 1;
+        if (hasOverflow) {
+          container.setAttribute('data-overflow', 'true');
+        } else {
+          dropdown.open = false;
+        }
+      };
+
+      updateOverflow();
+
+      if (typeof ResizeObserver === 'function') {
+        const resizeObserver = new ResizeObserver(updateOverflow);
+        resizeObserver.observe(container);
+        resizeObserver.observe(inline);
+      }
+
+      window.addEventListener('resize', updateOverflow, { passive: true });
+    };
+
+    document.querySelectorAll('[data-header-ctas]').forEach(initHeaderCtas);
+  })();
+{% endjavascript %}
+
+{% stylesheet %}
+  .header-ctas {
+    display: none;
+  }
+
+  @media (min-width: 990px) {
+    .header-ctas {
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-width: 0;
+    }
+
+    .header-ctas__inline {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-xs);
+      min-width: 0;
+      flex-wrap: nowrap;
+    }
+
+    .header-ctas__button {
+      flex-shrink: 0;
+    }
+
+    .header-ctas__dropdown {
+      display: none;
+      position: relative;
+    }
+
+    .header-ctas[data-overflow] .header-ctas__inline {
+      display: none;
+    }
+
+    .header-ctas[data-overflow] .header-ctas__dropdown {
+      display: block;
+    }
+
+    .header-ctas__dropdown-button {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-2xs);
+      list-style: none;
+    }
+
+    .header-ctas__dropdown-button:hover {
+      color: var(--color-secondary-button-hover-text);
+    }
+
+    .header-ctas__dropdown-button::-webkit-details-marker {
+      display: none;
+    }
+
+    .header-ctas__dropdown-button .icon-caret {
+      width: var(--icon-size-xs);
+      height: var(--icon-size-xs);
+      transition: transform var(--animation-speed) var(--animation-easing);
+    }
+
+    .header-ctas__dropdown[open] .header-ctas__dropdown-button .icon-caret {
+      transform: rotate(180deg);
+    }
+
+    .header-ctas__dropdown-menu {
+      position: absolute;
+      right: 0;
+      top: calc(100% + var(--gap-2xs));
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: var(--gap-2xs);
+      min-width: max-content;
+      padding: var(--padding-2xs);
+      border: var(--style-border-popover);
+      border-radius: var(--style-border-radius-popover);
+      box-shadow: var(--shadow-popover);
+      z-index: var(--layer-raised);
+    }
+
+    .header-ctas__dropdown:not([open]) .header-ctas__dropdown-menu {
+      display: none;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.header_ctas",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label_1",
+      "label": "t:settings.label",
+      "default": "t:text_defaults.button_label"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "t:settings.link"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_in_new_tab_1",
+      "label": "Open in new tab",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "style_class_1",
+      "label": "Style",
+      "options": [
+        {
+          "value": "button",
+          "label": "Primary"
+        },
+        {
+          "value": "button-secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "link",
+          "label": "Link"
+        }
+      ],
+      "default": "button"
+    },
+    {
+      "type": "header",
+      "content": "Button 2"
+    },
+    {
+      "type": "text",
+      "id": "label_2",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_in_new_tab_2",
+      "label": "Open in new tab",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "style_class_2",
+      "label": "Style",
+      "options": [
+        {
+          "value": "button",
+          "label": "Primary"
+        },
+        {
+          "value": "button-secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "link",
+          "label": "Link"
+        }
+      ],
+      "default": "button-secondary"
+    },
+    {
+      "type": "header",
+      "content": "Button 3"
+    },
+    {
+      "type": "text",
+      "id": "label_3",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "link_3",
+      "label": "Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_in_new_tab_3",
+      "label": "Open in new tab",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "style_class_3",
+      "label": "Style",
+      "options": [
+        {
+          "value": "button",
+          "label": "Primary"
+        },
+        {
+          "value": "button-secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "link",
+          "label": "Link"
+        }
+      ],
+      "default": "link"
+    }
+  ]
+}
+{% endschema %}

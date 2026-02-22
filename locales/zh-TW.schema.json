@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "第三級按鈕",
+    "dev_mode": "開發者模式",
+    "tag": "標籤",
+    "tag_list": "標籤清單",
     "404": "404",
     "borders": "邊框",
     "collapsible_row": "可摺疊列",
@@ -26,6 +39,7 @@
     "submit_button": "提交按鈕",
     "grid_layout_selector": "網格版面配置選擇器",
     "image": "圖片",
+    "image_and_videos": "圖片與影片",
     "list_items": "清單項目",
     "facets": "多面向",
     "variants": "子類",
@@ -73,6 +87,8 @@
     "footer_utilities": "頁尾工具",
     "group": "群組",
     "header": "頁首",
+    "header_ctas": "頁首 CTA",
+    "radio_card": "單選卡片",
     "heading": "標題",
     "icons": "圖示",
     "image_with_text": "附文字圖像",
@@ -190,7 +206,31 @@
     "product_sku": "存貨單位 (SKU)",
     "layered_slideshow": "分層輪播"
   },
+  "presets": {
+    "tag": "標籤",
+    "tag_list": "標籤清單",
+    "radio_card": "單選卡片"
+  },
   "settings": {
+    "logo_type": "Logo 類型",
+    "svg_logo_filename": "SVG Logo 檔名",
+    "aria_label": "ARIA 標籤",
+    "hide_on_mobile": "在行動版隱藏",
+    "hide_on_desktop": "在桌面版隱藏",
+    "use_grid_on_mobile": "在行動版使用網格",
+    "use_grid_on_desktop": "在桌面版使用網格",
+    "custom_condition": "自訂條件",
+    "display_mode": "顯示模式",
+    "dev_mode_enabled": "啟用開發者模式",
+    "list_type": "清單類型",
+    "disabled": "已停用",
+    "html_tag": "HTML 標籤",
+    "class": "類別",
+    "fetch_priority": "載入優先順序",
+    "name": "名稱",
+    "value": "值",
+    "checked": "預設勾選",
+    "id": "ID",
     "alignment": "對齊",
     "autoplay": "自動播放",
     "background": "背景",
@@ -214,6 +254,7 @@
     "gap": "間距",
     "geometric_translate_y": "幾何平移 Y",
     "heading": "標題",
+    "subheadings": "副標題",
     "icon": "圖示",
     "image": "圖片",
     "image_icon": "圖片圖示",
@@ -520,6 +561,7 @@
     "gift_card_form": "禮品卡表單",
     "seller_note_open_by_default": "預設展開給賣家的備註",
     "add_to_cart_animation": "加入購物車",
+    "text_animation_enabled": "啟用文字動畫",
     "custom_link": "自訂連結",
     "product_custom_property": {
       "heading": "標題",
@@ -581,9 +623,16 @@
     "actions_display_style": "選單樣式"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "自訂條件",
+    "all_pages": "所有頁面",
+    "homepage_only": "僅首頁",
+    "ol": "有序清單",
+    "ul": "無序清單",
     "apple": "Apple",
     "arrow": "箭頭",
     "auto": "自動",
+    "low": "低",
     "banana": "香蕉",
     "bottle": "瓶子",
     "box": "方塊",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "地圖圖釘",
     "medium": "中",
+    "high": "高",
     "none": "無",
     "numbers": "數字",
     "nut_free": "無堅果",
@@ -638,6 +688,7 @@
     "paw_print": "腳印",
     "pepper": "胡椒",
     "perfume": "香水",
+    "phone": "電話",
     "pinterest": "Pinterest",
     "plane": "飛機",
     "plant": "植物",
@@ -821,6 +872,7 @@
     "body": "內文",
     "button_primary": "主要按鈕",
     "button_secondary": "次要按鈕",
+    "button_tertiary": "第三級按鈕",
     "compact": "緊湊",
     "crop_to_fit": "裁切以符合",
     "hidden": "隱藏",
@@ -845,6 +897,7 @@
     "spotlight": "Spotlight",
     "standard": "標準",
     "subheading": "副標題",
+    "subheadings": "副標題",
     "blur": "模糊",
     "lift": "抬升",
     "reveal": "顯現",
@@ -856,6 +909,7 @@
     "icons": "圖示"
   },
   "content": {
+    "dev_mode": "開發者模式",
     "advanced": "進階",
     "background_image": "背景圖片",
     "background_video": "背景影片",
@@ -925,6 +979,7 @@
     "colors": "顏色",
     "collection_page": "商品系列頁面",
     "customer_account": "顧客帳號",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "在[主題設定](/editor?context=theme&category=search)中編輯空白商品系列",
     "grid_layout": "網格版面配置",
     "home_page": "首頁",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>探索我們精心策劃的商品系列，精選兼具風格與品質的人氣款。</p>"
   },
   "text_defaults": {
+    "tag": "標籤",
     "button_label": "立即選購",
     "collapsible_row": "可摺疊列",
     "heading": "標題",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "新品上市"
   },
   "info": {
+    "logo_type": "選擇 Logo 使用圖片或 SVG 檔案。",
+    "svg_logo_filename": "請輸入 assets 中的 SVG 檔名，例如 brand。",
+    "custom_condition": "回傳 true 以顯示此區塊，否則回傳 false。",
+    "dev_mode": "可使用更多選項，尤其可從設定中注入程式碼。",
     "carousel_layout_on_mobile": "在行動裝置上一律使用輪播",
     "video_alt_text": "為使用輔助技術的使用者描述影片",
     "video_autoplay": "影片預設為靜音播放",

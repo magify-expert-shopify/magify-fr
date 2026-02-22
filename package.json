@@ -1,0 +1,43 @@
+{
+  "name": "magify-fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "logout": "shopify auth logout",
+    "pull": "shopify theme pull --store magify-ecom --theme Horizon --ignore package.json",
+    "push": "shopify theme push --store magify-ecom --theme Horizon -a",
+    "dev": "shopify theme dev --store magify-ecom",
+    "check": "shopify theme check",
+    "fix": "shopify theme check --auto-correct",
+    "pretty": "prettier --write \"./**/*.{liquid,sass,scss,css,js,jsx,mjs,cjs,ts,tsx,json}\"",
+    "json": "prettier --write ./**/*.json",
+    "build": "gulp --gulpfile ./scripts/gulpfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magify-expert-shopify/magify-fr.git"
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "liquid",
+    "horizon",
+    "horizon-plus",
+    "horizon-theme"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.1.0",
+    "prettier": "^3.8.1"
+  },
+  "bugs": {
+    "url": "https://github.com/magify-expert-shopify/magify-fr/issues"
+  },
+  "homepage": "https://github.com/magify-expert-shopify/magify-fr#readme"
+}

@@ -25,7 +25,8 @@
       "@theme/component-quantity-selector": "{{ 'component-quantity-selector.js' | asset_url }}",
       "@theme/comparison-slider": "{{ 'comparison-slider.js' | asset_url }}",
       "@theme/sticky-add-to-cart": "{{ 'sticky-add-to-cart.js' | asset_url }}",
-      "@theme/fly-to-cart": "{{ 'fly-to-cart.js' | asset_url }}"
+      "@theme/fly-to-cart": "{{ 'fly-to-cart.js' | asset_url }}",
+      "@theme/component-radio-group": "{{ 'component-radio-group.js' | asset_url }}"
     }
   }
 </script>
@@ -37,6 +38,14 @@
     blocking="render"
   {% endif %}
 ></script>
+
+{% if settings.text_transition_enabled %}
+  <script
+    src="{{ 'animations.js' | asset_url }}"
+    type="module"
+    fetchpriority="low"
+  ></script>
+{% endif %}
 
 <link
   rel="modulepreload"
@@ -270,6 +279,12 @@
 <script
   src="{{ 'auto-close-details.js' | asset_url }}"
   defer="defer"
+></script>
+
+<script
+  src="{{ 'component-radio-group.js' | asset_url }}"
+  type="module"
+  fetchpriority="low"
 ></script>
 
 <script>

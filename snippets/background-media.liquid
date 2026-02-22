@@ -93,7 +93,7 @@
 
     {%- if background_image != blank -%}
       {% liquid
-        assign fetch_priority = 'auto'
+        assign fetch_priority = settings.fetch_priority
         assign loading = 'lazy'
         if section and section.index == 1
           assign fetch_priority = 'high'

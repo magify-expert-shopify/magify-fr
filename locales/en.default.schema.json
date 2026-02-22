@@ -32,6 +32,7 @@
     "text": "Text"
   },
   "content": {
+    "dev_mode": "Developer mode",
     "visible_if_collection_has_more_products": "Visible if collection has more products than shown",
     "advanced": "Advanced",
     "appearance": "Appearance",
@@ -58,6 +59,7 @@
     "content_width": "Content width only applies when the section width is set to full width.",
     "copyright": "Copyright",
     "customer_account": "Customer account",
+    "cta": "CTA",
     "describe_the_video_for": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "edit_empty_state_collection_in_theme_settings": "Edit empty state collection in [theme settings](/editor?context=theme&category=search)",
     "edit_logo_in_theme_settings": "Edit logo in [theme settings](/editor?context=theme&category=logo%20and%20favicon)",
@@ -211,6 +213,10 @@
     "work_quickly_to_ship": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>"
   },
   "info": {
+    "logo_type": "Choose whether to use an image or an SVG file for the logo.",
+    "svg_logo_filename": "Enter the SVG filename from assets, for example brand.",
+    "dev_mode": "Get access to more options, including the ability to inject code from settings.",
+    "custom_condition": "Return true to show the section, otherwise false.",
     "actions_display_style": "Icons are always used on mobile",
     "applies_on_image_only": "Applies to images only",
     "aspect_ratio_adjusted": "Adjusted in some layouts",
@@ -236,6 +242,10 @@
     "media_type_info": "Features are populated from your menu links"
   },
   "names": {
+    "tertiary_button": "Tertiary button",
+    "dev_mode": "Developer mode",
+    "tag": "Tag",
+    "tag_list": "Tag list",
     "column": "Column",
     "product_title": "Product title",
     "custom_liquid": "Custom Liquid",
@@ -320,6 +330,8 @@
     // Layout container block that groups other content
     "group": "Group",
     "header": "Header",
+    "header_ctas": "Header CTAs",
+    "radio_card": "Radio card",
     "heading": "Heading",
     "hero": "Hero",
     "hero_bottom_aligned": "Hero: Bottom aligned",
@@ -328,6 +340,7 @@
     "icons": "Icons",
     "icons_with_text": "Icons with text",
     "image": "Image",
+    "image_and_videos": "Image and videos",
     "image_compare": "Image compare",
     "image_with_text": "Image with text",
     "input": "Input",
@@ -437,6 +450,11 @@
     "comparison_slider": "Comparison slider"
   },
   "options": {
+    "svg": "SVG",
+    "all_pages": "All pages",
+    "homepage_only": "Homepage only",
+    "ol": "Ordered list",
+    "ul": "Unordered list",
     "above_carousel": "Above carousel",
     "accent": "Accent",
     "all": "All",
@@ -447,6 +465,7 @@
     "arrows_large": "Large arrows",
     "aspect_ratio": "Aspect ratio",
     "auto": "Auto",
+    "low": "Low",
     "balance": "Balance",
     "banana": "Banana",
     "below_image": "Below image",
@@ -467,6 +486,7 @@
     "button": "Button",
     "button_primary": "Primary button",
     "button_secondary": "Secondary button",
+    "button_tertiary": "Tertiary button",
     "buttons": "Buttons",
     "capitalize": "Capitalize",
     "caption": "Caption",
@@ -600,6 +620,7 @@
     "media_second": "Media second",
     // Size/weight option between small/light and large/heavy
     "medium": "Medium",
+    "high": "High",
     "modal": "Modal",
     "narrow": "Narrow",
     "never": "Never",
@@ -632,6 +653,7 @@
     "pepper": "Pepper",
     "percent": "Percent",
     "perfume": "Perfume",
+    "phone": "Phone",
     "pill": "Pill",
     "pills": "Pills",
     "pinterest": "Pinterest",
@@ -711,6 +733,7 @@
     "start": "Start",
     "stopwatch": "Stopwatch",
     "subheading": "Subheading",
+    "subheadings": "Subheading",
     "subtle_zoom": "Zoom",
     "swatches": "Swatches",
     // Third-level option in font/typography hierarchy
@@ -748,7 +771,31 @@
     "with_hints": "With hints",
     "below_media": "Below media"
   },
+  "presets": {
+    "tag": "Tag",
+    "tag_list": "Tag list",
+    "radio_card": "Radio card"
+  },
   "settings": {
+    "logo_type": "Logo type",
+    "svg_logo_filename": "SVG logo filename",
+    "aria_label": "ARIA label",
+    "hide_on_mobile": "Hide on mobile",
+    "hide_on_desktop": "Hide on desktop",
+    "use_grid_on_mobile": "Use grid on mobile",
+    "use_grid_on_desktop": "Use grid on desktop",
+    "custom_condition": "Custom condition",
+    "display_mode": "Display mode",
+    "dev_mode_enabled": "Enable developer mode",
+    "list_type": "List type",
+    "disabled": "Disabled",
+    "html_tag": "HTML tag",
+    "class": "Class",
+    "fetch_priority": "Fetch priority",
+    "name": "Name",
+    "value": "Value",
+    "checked": "Checked by default",
+    "id": "ID",
     "accordion": "Accordion",
     "account": "Account",
     "actions_display_style": "Menu style",
@@ -759,6 +806,7 @@
     "animation_repeat": "Repeat animation",
     "add_discount_code": "Allow discounts in cart",
     "add_to_cart_animation": "Add to cart",
+    "text_animation_enabled": "Enable text animation",
     "always_stack_buttons": "Always stack buttons",
     "aspect_ratio": "Aspect ratio",
     "custom_mobile_media": "Show different media on mobile",
@@ -888,6 +936,7 @@
     "gift_card_form": "Gift card form",
     "gradient_direction": "Gradient direction",
     "heading": "Heading",
+    "subheadings": "Subheading",
     "heading_preset": "Heading preset",
     "headings": "Headings",
     "height": "Height",
@@ -1177,6 +1226,7 @@
     "y_position": "Vertical position"
   },
   "text_defaults": {
+    "tag": "Tag",
     "accordion_heading": "Accordion heading",
     "are_purchases_final_sale": "Are any purchases final sale?",
     "be_bold": "Be bold.",

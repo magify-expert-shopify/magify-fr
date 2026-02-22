@@ -1,5 +1,3 @@
-
-
 {%- capture children %}
   {% content_for 'blocks' %}
 {% endcapture %}
@@ -27,6 +25,18 @@
       "content": "t:content.layout"
     },
     {
+      "type": "checkbox",
+      "id": "hide_on_mobile",
+      "label": "t:settings.hide_on_mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_on_desktop",
+      "label": "t:settings.hide_on_desktop",
+      "default": false
+    },
+    {
       "type": "select",
       "id": "content_direction",
       "label": "t:settings.direction",
@@ -47,7 +57,7 @@
       "id": "vertical_on_mobile",
       "label": "t:settings.vertical_on_mobile",
       "default": true,
-      "visible_if": "{{ block.settings.content_direction == 'row' }}"
+      "visible_if": "{{ block.settings.hide_on_mobile == false and block.settings.content_direction == 'row' }}"
     },
     {
       "type": "select",
@@ -211,7 +221,8 @@
           "label": "t:options.custom"
         }
       ],
-      "default": "fill"
+      "default": "fill",
+      "visible_if": "{{ block.settings.hide_on_mobile == false }}"
     },
     {
       "type": "range",
@@ -443,6 +454,11 @@
       "label": "t:settings.link"
     },
     {
+      "type": "text",
+      "id": "aria_label",
+      "label": "t:settings.aria_label"
+    },
+    {
       "type": "checkbox",
       "id": "open_in_new_tab",
       "label": "t:settings.open_new_tab",
@@ -497,6 +513,17 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    { "type": "header", "content": "t:content.advanced" },
+    {
+      "type": "text",
+      "id": "id",
+      "label": "t:settings.id"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "t:settings.class"
     }
   ],
   "presets": [

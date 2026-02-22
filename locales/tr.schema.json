@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Üçüncül düğme",
+    "dev_mode": "Geliştirici modu",
+    "tag": "Etiket",
+    "tag_list": "Etiket listesi",
     "404": "404",
     "borders": "Kenarlıklar",
     "collapsible_row": "Daraltılabilir satır",
@@ -27,6 +40,7 @@
     "submit_button": "Gönder düğmesi",
     "grid_layout_selector": "Izgara düzeni seçici",
     "image": "Görsel",
+    "image_and_videos": "Görseller ve videolar",
     "list_items": "Liste öğeleri",
     "facets": "Özellikler",
     "variants": "Varyasyonlar",
@@ -83,6 +97,8 @@
     "footer_utilities": "Altbilgi yardımcı programları",
     "group": "Grup",
     "header": "Üstbilgi",
+    "header_ctas": "Üst bilgi CTA'ları",
+    "radio_card": "Seçim kartı",
     "heading": "Başlık",
     "hero": "Hero",
     "icons": "Simgeler",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Katmanlı slayt gösterisi"
   },
+  "presets": {
+    "tag": "Etiket",
+    "tag_list": "Etiket listesi",
+    "radio_card": "Seçim kartı"
+  },
   "settings": {
+    "logo_type": "Logo türü",
+    "svg_logo_filename": "SVG logo dosya adı",
+    "aria_label": "ARIA etiketi",
+    "hide_on_mobile": "Mobilde gizle",
+    "hide_on_desktop": "Masaüstünde gizle",
+    "use_grid_on_mobile": "Mobilde ızgara kullan",
+    "use_grid_on_desktop": "Masaüstünde ızgara kullan",
+    "custom_condition": "Ozel kosul",
+    "display_mode": "Gorunum modu",
+    "dev_mode_enabled": "Geliştirici modunu etkinleştir",
+    "list_type": "Liste türü",
+    "disabled": "Devre dışı",
+    "html_tag": "HTML etiketi",
+    "class": "Sınıf",
+    "fetch_priority": "Yükleme önceliği",
+    "name": "Ad",
+    "value": "Değer",
+    "checked": "Varsayılan olarak seçili",
+    "id": "ID",
     "autoplay": "Otomatik oynatma",
     "background": "Arka plan",
     "border_radius": "Köşe yarıçapı",
@@ -206,6 +246,7 @@
     "enable_video_looping": "Video döngüsü",
     "favicon": "Favicon",
     "heading": "Başlık",
+    "subheadings": "Alt başlık",
     "icon": "Simge",
     "image_icon": "Görsel simge",
     "make_section_full_width": "Bölümü tam genişlik yap",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "Satıcıya not alanını varsayılan olarak açık tut",
     "gift_card_form": "Hediye kartı formu",
     "add_to_cart_animation": "Sepete ekle",
+    "text_animation_enabled": "Metin animasyonunu etkinleştir",
     "custom_link": "Özel bağlantı",
     "product_custom_property": {
       "heading": "Başlık",
@@ -581,6 +623,12 @@
     "actions_display_style": "Menü stili"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Ozel kosul",
+    "all_pages": "Tum sayfalar",
+    "homepage_only": "Yalnizca anasayfa",
+    "ol": "Sıralı liste",
+    "ul": "Sırasız liste",
     "apple": "Apple",
     "arrow": "Ok",
     "banana": "Muz",
@@ -617,6 +665,7 @@
     "lock": "Kilit",
     "map_pin": "Harita pini",
     "medium": "Orta",
+    "high": "Yüksek",
     "none": "Hiçbiri",
     "numbers": "Sayılar",
     "nut_free": "Kuruyemiş içermez",
@@ -624,6 +673,7 @@
     "paw_print": "Pati izi",
     "pepper": "Biber",
     "perfume": "Parfüm",
+    "phone": "Telefon",
     "pinterest": "Pinterest",
     "plane": "Uçak",
     "plant": "Bitki",
@@ -650,6 +700,7 @@
     "vimeo": "Vimeo",
     "washing": "Yıkama",
     "auto": "Otomatik",
+    "low": "Düşük",
     "default": "Varsayılan",
     "fill": "Doldur",
     "fit": "Sığdır",
@@ -824,6 +875,7 @@
     "body": "Gövde",
     "button_primary": "Birincil düğme",
     "button_secondary": "İkincil düğme",
+    "button_tertiary": "Üçüncül düğme",
     "compact": "Kompakt",
     "crop_to_fit": "Sığdırmak için kırp",
     "hint": "İpucu",
@@ -845,6 +897,7 @@
     "social_youtube": "Sosyal: YouTube",
     "standard": "Standart",
     "subheading": "Alt başlık",
+    "subheadings": "Alt başlık",
     "blur": "Bulanıklaştır",
     "lift": "Yükselt",
     "reveal": "Ortaya çıkar",
@@ -856,6 +909,7 @@
     "icons": "Simgeler"
   },
   "content": {
+    "dev_mode": "Geliştirici modu",
     "background_video": "Arka plan videosu",
     "describe_the_video_for": "Ekran okuyucu kullanan müşteriler için videoyu açıklayın. [Daha fazla bilgi edinin](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Genişlik, mobil cihazlar için otomatik olarak optimize edilir.",
@@ -925,6 +979,7 @@
     "colors": "Renkler",
     "collection_page": "Koleksiyon sayfası",
     "customer_account": "Müşteri hesabı",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Boş durum koleksiyonunu [tema ayarlarından](/editor?context=theme&category=search) düzenleyin",
     "home_page": "Ana sayfa",
     "images": "Görseller",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Stil ve kaliteyi bir araya getiren, özenle seçilmiş favorilerden oluşan koleksiyonumuzu keşfedin.</p>"
   },
   "text_defaults": {
+    "tag": "Etiket",
     "collapsible_row": "Daraltılabilir satır",
     "button_label": "Hemen alışveriş yap",
     "heading": "Başlık",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Yeni gelenler"
   },
   "info": {
+    "logo_type": "Logoda görsel mi yoksa SVG dosyası mı kullanılacağını seçin.",
+    "svg_logo_filename": "assets içindeki SVG dosya adını girin, örn. brand.",
+    "custom_condition": "Bolumu gostermek icin true, aksi halde false dondurun.",
+    "dev_mode": "Ayarlar üzerinden kod enjekte etme dahil daha fazla seçeneğe erişim sağlar.",
     "video_alt_text": "Yardımcı teknoloji kullanıcıları için videoyu açıklayın",
     "video_autoplay": "Videolar varsayılan olarak sessize alınır",
     "video_external": "Bir YouTube veya Vimeo URL'si kullanın",

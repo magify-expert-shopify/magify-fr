@@ -1,7 +1,6 @@
 {%- doc -%}
   Renders media block contents (used in _media and _media-without-appearance blocks)
 
-  @param {string} section_id - The section ID
   @param {object} [block] - The block object
   @param {boolean} [unset_image_tag] - if true, ignores the image focal point in the image
 {%- enddoc -%}
@@ -68,7 +67,6 @@
       video_autoplay: block_settings.video_autoplay,
       video_loop: block_settings.video_loop,
       video_class: 'media-block__media media-block__media--video border-style',
-      section_id: section_id
     %}
   {%- else -%}
     <div class="media-block__media border-style">

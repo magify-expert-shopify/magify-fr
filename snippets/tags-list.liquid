@@ -1,0 +1,17 @@
+{%- doc -%}
+  Renders a generic “tag / badge” element.
+
+  @param {object} tags - Array of tag labels
+  @param {string} [class] - Extra class appended to base class
+  @param {string} [list_type] - HTML tag to use: ul | ol (default: ul)
+{%- enddoc -%}
+
+{% liquid
+  assign list_type = list_type | default: 'ul'
+%}
+
+<{{ list_type }} class="tags {{ class }}s">
+  {%- for tag in tags -%}
+    {% render 'tag', text: tag, tag_name: 'li', class: class %}
+  {% endfor %}
+</{{ list_type }}>

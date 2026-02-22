@@ -43,7 +43,9 @@
   {% if class != blank %}
     class="{{ class }}"
   {% endif %}
-  {{ attributes }}
+  {% if index != 0 %}
+    inert
+  {% endif %}
   {% if style != blank %}
     style="{{ style }}"
   {% endif %}

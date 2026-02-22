@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Tertiær knap",
+    "dev_mode": "Udviklertilstand",
+    "tag": "Tag",
+    "tag_list": "Tagliste",
     "404": "404",
     "borders": "Kanter",
     "collapsible_row": "Række, der kan skjules",
@@ -26,6 +39,7 @@
     "submit_button": "Send-knap",
     "grid_layout_selector": "Vælger til gitterlayout",
     "image": "Billede",
+    "image_and_videos": "Billeder og videoer",
     "list_items": "Listeelementer",
     "facets": "Facetter",
     "variants": "Varianter",
@@ -73,6 +87,8 @@
     "footer_utilities": "Hjælpefunktioner i sidefod",
     "group": "Gruppe",
     "header": "Sidehoved",
+    "header_ctas": "Header-CTA'er",
+    "radio_card": "Radiokort",
     "heading": "Overskrift",
     "icons": "Ikoner",
     "image_with_text": "Billede med tekst",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Diasshow i lag"
   },
+  "presets": {
+    "tag": "Tag",
+    "tag_list": "Tagliste",
+    "radio_card": "Radiokort"
+  },
   "settings": {
+    "logo_type": "Logotype",
+    "svg_logo_filename": "Filnavn for SVG-logo",
+    "aria_label": "ARIA-label",
+    "hide_on_mobile": "Skjul på mobil",
+    "hide_on_desktop": "Skjul på desktop",
+    "use_grid_on_mobile": "Brug gitter på mobil",
+    "use_grid_on_desktop": "Brug gitter på desktop",
+    "custom_condition": "Brugerdefineret betingelse",
+    "display_mode": "Visningstilstand",
+    "dev_mode_enabled": "Aktivér udviklertilstand",
+    "list_type": "Listetype",
+    "disabled": "Deaktiveret",
+    "html_tag": "HTML-tag",
+    "class": "Klasse",
+    "fetch_priority": "Indlæsningsprioritet",
+    "name": "Navn",
+    "value": "Værdi",
+    "checked": "Markeret som standard",
+    "id": "ID",
     "alignment": "Justering",
     "autoplay": "Automatisk afspilning",
     "background": "Baggrund",
@@ -214,6 +254,7 @@
     "gap": "Afstand",
     "geometric_translate_y": "Geometrisk Y-forskydning",
     "heading": "Overskrift",
+    "subheadings": "Underoverskrift",
     "icon": "Ikon",
     "image": "Billede",
     "image_icon": "Billedikon",
@@ -520,6 +561,7 @@
     "gift_card_form": "Formular til gavekort",
     "seller_note_open_by_default": "Åbn note til sælger som standard",
     "add_to_cart_animation": "Læg i kurv",
+    "text_animation_enabled": "Aktiver tekstanimation",
     "custom_link": "Brugerdefineret link",
     "product_custom_property": {
       "heading": "Overskrift",
@@ -581,9 +623,16 @@
     "actions_display_style": "Menustil"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Brugerdefineret betingelse",
+    "all_pages": "Alle sider",
+    "homepage_only": "Kun startside",
+    "ol": "Nummereret liste",
+    "ul": "Punktopstilling",
     "apple": "Apple",
     "arrow": "Pil",
     "auto": "Auto",
+    "low": "Lav",
     "banana": "Banan",
     "bottle": "Flaske",
     "box": "Boks",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "Kortnål",
     "medium": "Mellem",
+    "high": "Høj",
     "none": "Ingen",
     "numbers": "Tal",
     "nut_free": "Nøddefri",
@@ -638,6 +688,7 @@
     "paw_print": "Poteaftryk",
     "pepper": "Peber",
     "perfume": "Parfume",
+    "phone": "Telefon",
     "pinterest": "Pinterest",
     "plane": "Fly",
     "plant": "Plante",
@@ -821,6 +872,7 @@
     "body": "Brødtekst",
     "button_primary": "Primær knap",
     "button_secondary": "Sekundær knap",
+    "button_tertiary": "Tertiær knap",
     "compact": "Kompakt",
     "crop_to_fit": "Beskær for at tilpasse",
     "hidden": "Skjult",
@@ -845,6 +897,7 @@
     "spotlight": "Spotlight",
     "standard": "Standard",
     "subheading": "Underoverskrift",
+    "subheadings": "Underoverskrift",
     "blur": "Sløring",
     "lift": "Løft",
     "reveal": "Afslør",
@@ -856,6 +909,7 @@
     "icons": "Ikoner"
   },
   "content": {
+    "dev_mode": "Udviklertilstand",
     "advanced": "Avanceret",
     "background_image": "Baggrundsbillede",
     "background_video": "Baggrundsvideo",
@@ -927,6 +981,7 @@
     "colors": "Farver",
     "collection_page": "Kollektionsside",
     "customer_account": "Kundekonto",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Rediger kollektion for tom tilstand i [temaindstillinger](/editor?context=theme&category=search)",
     "grid_layout": "Gitterlayout",
     "home_page": "Startside",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Opdag vores nøje udvalgte kollektion med håndplukkede favoritter, der forener stil og kvalitet.</p>"
   },
   "text_defaults": {
+    "tag": "Tag",
     "button_label": "Køb nu",
     "collapsible_row": "Række, der kan skjules",
     "heading": "Overskrift",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Nye varer"
   },
   "info": {
+    "logo_type": "Vælg om logoet skal være et billede eller en SVG-fil.",
+    "svg_logo_filename": "Angiv SVG-filnavnet i assets, f.eks. brand.",
+    "custom_condition": "Returner true for at vise sektionen, ellers false.",
+    "dev_mode": "Du får adgang til flere muligheder, herunder at kunne indsætte kode direkte fra indstillingerne.",
     "carousel_layout_on_mobile": "Karrusellen bruges altid på mobil",
     "video_alt_text": "Beskriv videoen for brugere af hjælpeteknologi",
     "video_autoplay": "Videoer vil som standard være uden lyd",

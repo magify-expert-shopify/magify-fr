@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Tertiär knapp",
+    "dev_mode": "Utvecklarläge",
+    "tag": "Tagg",
+    "tag_list": "Tagglista",
     "404": "404",
     "borders": "Kantlinjer",
     "collapsible_row": "Hopfällbar rad",
@@ -26,6 +39,7 @@
     "submit_button": "Skicka-knapp",
     "grid_layout_selector": "Rutnätslayoutväljare",
     "image": "Bild",
+    "image_and_videos": "Bilder och videor",
     "list_items": "Listobjekt",
     "facets": "Aspekter",
     "variants": "Varianter",
@@ -74,6 +88,8 @@
     "footer_utilities": "Sidfotsverktyg",
     "group": "Grupp",
     "header": "Sidhuvud",
+    "header_ctas": "Sidhuvud-CTA:er",
+    "radio_card": "Alternativkort",
     "heading": "Rubrik",
     "icons": "Ikoner",
     "image_with_text": "Bild med text",
@@ -190,7 +206,31 @@
     "product_sku": "Lagerhållningsenhet",
     "layered_slideshow": "Bildspel med lager"
   },
+  "presets": {
+    "tag": "Tagg",
+    "tag_list": "Tagglista",
+    "radio_card": "Alternativkort"
+  },
   "settings": {
+    "logo_type": "Logotyp",
+    "svg_logo_filename": "Filnamn för SVG-logotyp",
+    "aria_label": "ARIA-etikett",
+    "hide_on_mobile": "Dölj på mobil",
+    "hide_on_desktop": "Dölj på dator",
+    "use_grid_on_mobile": "Använd rutnät på mobil",
+    "use_grid_on_desktop": "Använd rutnät på dator",
+    "custom_condition": "Anpassat villkor",
+    "display_mode": "Visningsläge",
+    "dev_mode_enabled": "Aktivera utvecklarläge",
+    "list_type": "Listtyp",
+    "disabled": "Inaktiverad",
+    "html_tag": "HTML-tagg",
+    "class": "Klass",
+    "fetch_priority": "Laddningsprioritet",
+    "name": "Namn",
+    "value": "Värde",
+    "checked": "Markerad som standard",
+    "id": "ID",
     "alignment": "Justering",
     "autoplay": "Autouppspelning",
     "background": "Bakgrund",
@@ -214,6 +254,7 @@
     "gap": "Mellanrum",
     "geometric_translate_y": "Geometrisk translate Y",
     "heading": "Rubrik",
+    "subheadings": "Underrubrik",
     "icon": "Ikon",
     "image": "Bild",
     "image_icon": "Bildikon",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "Öppna meddelande till säljaren som standard",
     "gift_card_form": "Formulär för presentkort",
     "add_to_cart_animation": "Lägg till i varukorgen",
+    "text_animation_enabled": "Aktivera textanimering",
     "custom_link": "Anpassad länk",
     "product_custom_property": {
       "heading": "Rubrik",
@@ -581,9 +623,16 @@
     "actions_display_style": "Menystil"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Anpassat villkor",
+    "all_pages": "Alla sidor",
+    "homepage_only": "Endast startsida",
+    "ol": "Ordnad lista",
+    "ul": "Oordnad lista",
     "apple": "Apple",
     "arrow": "Pil",
     "auto": "Auto",
+    "low": "Låg",
     "banana": "Banan",
     "bottle": "Flaska",
     "box": "Ruta",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "Kartnål",
     "medium": "Medium",
+    "high": "Hög",
     "none": "Ingen",
     "numbers": "Siffror",
     "nut_free": "Nötfri",
@@ -638,6 +688,7 @@
     "paw_print": "Tassavtryck",
     "pepper": "Peppar",
     "perfume": "Parfym",
+    "phone": "Telefon",
     "pinterest": "Pinterest",
     "plane": "Flygplan",
     "plant": "Växt",
@@ -824,6 +875,7 @@
     "body": "Brödtext",
     "button_primary": "Primär knapp",
     "button_secondary": "Sekundär knapp",
+    "button_tertiary": "Tertiär knapp",
     "compact": "Kompakt",
     "crop_to_fit": "Beskär för att passa",
     "hint": "Tips",
@@ -845,6 +897,7 @@
     "social_youtube": "Social: YouTube",
     "standard": "Standard",
     "subheading": "Underrubrik",
+    "subheadings": "Underrubrik",
     "blur": "Oskärpa",
     "lift": "Lyft",
     "reveal": "Avslöja",
@@ -856,6 +909,7 @@
     "icons": "Ikoner"
   },
   "content": {
+    "dev_mode": "Utvecklarläge",
     "advanced": "Avancerat",
     "background_image": "Bakgrundsbild",
     "background_video": "Bakgrundsvideo",
@@ -926,6 +980,7 @@
     "colors": "Färger",
     "collection_page": "Produktseriesida",
     "customer_account": "Kundkonto",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Redigera produktserie för tomt läge i [temainställningar](/editor?context=theme&category=search)",
     "grid_layout": "Rutnätslayout",
     "home_page": "Startsida",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Upptäck vår utvalda produktserie med handplockade favoriter som förenar stil och kvalitet.</p>"
   },
   "text_defaults": {
+    "tag": "Tagg",
     "button_label": "Handla nu",
     "collapsible_row": "Komprimerbar rad",
     "heading": "Rubrik",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Nyheter"
   },
   "info": {
+    "logo_type": "Välj om logotypen ska använda en bild eller en SVG-fil.",
+    "svg_logo_filename": "Ange SVG-filnamnet i assets, till exempel brand.",
+    "custom_condition": "Returnera true för att visa sektionen, annars false.",
+    "dev_mode": "Ger åtkomst till fler alternativ, inklusive möjligheten att injicera kod från inställningarna.",
     "video_alt_text": "Beskriv videon för användare av hjälpmedelsteknik",
     "video_autoplay": "Videor kommer att vara tystade som standard",
     "video_external": "Använd en URL från YouTube eller Vimeo",

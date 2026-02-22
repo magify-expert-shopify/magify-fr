@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Terciární tlačítko",
+    "dev_mode": "Režim vývojáře",
+    "tag": "Štítek",
+    "tag_list": "Seznam štítků",
     "404": "404",
     "borders": "Ohraničení",
     "collapsible_row": "Sbalitelný řádek",
@@ -26,6 +39,7 @@
     "submit_button": "Tlačítko Odeslat",
     "grid_layout_selector": "Selektor rozvržení mřížky",
     "image": "Obrázek",
+    "image_and_videos": "Obrázky a videa",
     "list_items": "Položky seznamu",
     "facets": "Filtry",
     "variants": "Varianty",
@@ -75,6 +89,8 @@
     "footer_utilities": "Nástroje zápatí",
     "group": "Skupina",
     "header": "Záhlaví",
+    "header_ctas": "CTA de l'en-tête",
+    "radio_card": "Karta s volbou",
     "heading": "Nadpis",
     "icons": "Ikony",
     "image_with_text": "Obrázek s textem",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Vrstvená prezentace"
   },
+  "presets": {
+    "tag": "Štítek",
+    "tag_list": "Seznam štítků",
+    "radio_card": "Karta s volbou"
+  },
   "settings": {
+    "logo_type": "Typ loga",
+    "svg_logo_filename": "Název souboru SVG loga",
+    "aria_label": "Popisek ARIA",
+    "hide_on_mobile": "Skrýt na mobilu",
+    "hide_on_desktop": "Skrýt na desktopu",
+    "use_grid_on_mobile": "Použít mřížku na mobilu",
+    "use_grid_on_desktop": "Použít mřížku na desktopu",
+    "custom_condition": "Vlastní podmínka",
+    "display_mode": "Režim zobrazení",
+    "dev_mode_enabled": "Povolit režim vývojáře",
+    "list_type": "Typ seznamu",
+    "disabled": "Zakázáno",
+    "html_tag": "HTML tag",
+    "class": "Třída",
+    "fetch_priority": "Priorita načítání",
+    "name": "Název",
+    "value": "Hodnota",
+    "checked": "Ve výchozím nastavení vybráno",
+    "id": "ID",
     "alignment": "Zarovnání",
     "autoplay": "Automatické přehrávání",
     "background": "Pozadí",
@@ -214,6 +254,7 @@
     "gap": "Mezera",
     "geometric_translate_y": "Geometrický posun na ose Y",
     "heading": "Nadpis",
+    "subheadings": "Podnadpis",
     "icon": "Ikona",
     "image": "Obrázek",
     "image_icon": "Obrázková ikona",
@@ -520,6 +561,7 @@
     "gift_card_form": "Formulář dárkové karty",
     "seller_note_open_by_default": "Ve výchozím nastavení otevřít poznámku pro prodejce",
     "add_to_cart_animation": "Přidat do košíku",
+    "text_animation_enabled": "Povolit animaci textu",
     "custom_link": "Vlastní odkaz",
     "product_custom_property": {
       "heading": "Nadpis",
@@ -581,9 +623,16 @@
     "actions_display_style": "Styl nabídky"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Vlastní podmínka",
+    "all_pages": "Všechny stránky",
+    "homepage_only": "Pouze domovská stránka",
+    "ol": "Číslovaný seznam",
+    "ul": "Neuspořádaný seznam",
     "apple": "Apple",
     "arrow": "Šipka",
     "auto": "Automaticky",
+    "low": "Nízká",
     "banana": "Banán",
     "bottle": "Láhev",
     "box": "Rámeček",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "Značka na mapě",
     "medium": "Střední",
+    "high": "Vysoká",
     "none": "Žádné",
     "numbers": "Čísla",
     "nut_free": "Bez ořechů",
@@ -638,6 +688,7 @@
     "paw_print": "Otisk tlapy",
     "pepper": "Pepř",
     "perfume": "Parfém",
+    "phone": "Telefon",
     "pinterest": "Pinterest",
     "plane": "Letadlo",
     "plant": "Rostlina",
@@ -822,6 +873,7 @@
     "body": "Text",
     "button_primary": "Primární tlačítko",
     "button_secondary": "Sekundární tlačítko",
+    "button_tertiary": "Terciární tlačítko",
     "compact": "Kompaktní",
     "crop_to_fit": "Oříznout na velikost",
     "hidden": "Skryté",
@@ -845,6 +897,7 @@
     "spotlight": "Spotlight",
     "standard": "Standardní",
     "subheading": "Podnadpis",
+    "subheadings": "Podnadpis",
     "blur": "Rozostření",
     "lift": "Zvednutí",
     "reveal": "Odhalení",
@@ -856,6 +909,7 @@
     "icons": "Ikony"
   },
   "content": {
+    "dev_mode": "Režim vývojáře",
     "advanced": "Pokročilé",
     "background_image": "Obrázek na pozadí",
     "background_video": "Video na pozadí",
@@ -925,6 +979,7 @@
     "colors": "Barvy",
     "collection_page": "Stránka s kolekcemi",
     "customer_account": "Zákaznický účet",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Upravte kolekci pro prázdný stav v [nastavení motivu](/editor?context=theme&category=search)",
     "home_page": "Domovská stránka",
     "images": "Obrázky",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Objevte naši pečlivě sestavenou kolekci s vybranými oblíbenými kousky, které spojují styl a kvalitu.</p>"
   },
   "text_defaults": {
+    "tag": "Štítek",
     "button_label": "Nakupujte nyní",
     "collapsible_row": "Rozbalovací řádek",
     "heading": "Nadpis",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Novinky"
   },
   "info": {
+    "logo_type": "Vyberte, zda použít obrázek nebo SVG soubor.",
+    "svg_logo_filename": "Zadejte název souboru SVG v assets, např. brand.",
+    "custom_condition": "Vraťte hodnotu true pro zobrazení sekce, jinak false.",
+    "dev_mode": "Získáte přístup k více možnostem, včetně možnosti vkládat kód přímo z nastavení.",
     "video_alt_text": "Popište video pro uživatele asistivních technologií",
     "video_autoplay": "Videa budou ve výchozím nastavení ztlumená",
     "video_external": "Použijte URL z YouTube nebo Vimeo",

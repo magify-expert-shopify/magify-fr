@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "第三级按钮",
+    "dev_mode": "开发者模式",
+    "tag": "标签",
+    "tag_list": "标签列表",
     "404": "404",
     "borders": "边框",
     "collapsible_row": "可折叠行",
@@ -27,6 +40,7 @@
     "submit_button": "提交按钮",
     "grid_layout_selector": "网格布局选择器",
     "image": "图片",
+    "image_and_videos": "图片和视频",
     "list_items": "列表项",
     "facets": "分面",
     "variants": "多属性",
@@ -76,6 +90,8 @@
     "footer_utilities": "页脚实用工具",
     "group": "群组",
     "header": "标头",
+    "header_ctas": "页眉 CTA",
+    "radio_card": "单选卡片",
     "heading": "标题",
     "icons": "图标",
     "image_with_text": "带文本图片",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "分层幻灯片"
   },
+  "presets": {
+    "tag": "标签",
+    "tag_list": "标签列表",
+    "radio_card": "单选卡片"
+  },
   "settings": {
+    "logo_type": "Logo 类型",
+    "svg_logo_filename": "SVG Logo 文件名",
+    "aria_label": "ARIA 标签",
+    "hide_on_mobile": "在移动端隐藏",
+    "hide_on_desktop": "在桌面端隐藏",
+    "use_grid_on_mobile": "在移动端使用网格",
+    "use_grid_on_desktop": "在桌面端使用网格",
+    "custom_condition": "自定义条件",
+    "display_mode": "显示模式",
+    "dev_mode_enabled": "启用开发者模式",
+    "list_type": "列表类型",
+    "disabled": "已禁用",
+    "html_tag": "HTML 标签",
+    "class": "类",
+    "fetch_priority": "加载优先级",
+    "name": "名称",
+    "value": "值",
+    "checked": "默认选中",
+    "id": "ID",
     "alignment": "对齐方式",
     "autoplay": "自动播放",
     "background": "背景",
@@ -214,6 +254,7 @@
     "gap": "间距",
     "geometric_translate_y": "几何 Y 轴平移",
     "heading": "标题",
+    "subheadings": "副标题",
     "icon": "图标",
     "image": "图片",
     "image_icon": "图片图标",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "默认打开给卖家的留言",
     "gift_card_form": "礼品卡表单",
     "add_to_cart_animation": "添加到购物车",
+    "text_animation_enabled": "启用文字动画",
     "custom_link": "自定义链接",
     "product_custom_property": {
       "heading": "标题",
@@ -581,9 +623,16 @@
     "actions_display_style": "菜单样式"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "自定义条件",
+    "all_pages": "所有页面",
+    "homepage_only": "仅首页",
+    "ol": "有序列表",
+    "ul": "无序列表",
     "apple": "Apple",
     "arrow": "箭头",
     "auto": "自动",
+    "low": "低",
     "banana": "香蕉",
     "bottle": "瓶子",
     "box": "方框",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "地图图钉",
     "medium": "中",
+    "high": "高",
     "none": "无",
     "numbers": "数字",
     "nut_free": "不含坚果",
@@ -638,6 +688,7 @@
     "paw_print": "爪印",
     "pepper": "辣椒",
     "perfume": "香水",
+    "phone": "电话",
     "pinterest": "Pinterest",
     "plane": "飞机",
     "plant": "植物",
@@ -822,6 +873,7 @@
     "body": "正文",
     "button_primary": "主要按钮",
     "button_secondary": "次要按钮",
+    "button_tertiary": "第三级按钮",
     "compact": "紧凑",
     "crop_to_fit": "裁剪以适应",
     "hidden": "隐藏",
@@ -849,6 +901,7 @@
     "spotlight": "聚焦",
     "standard": "标准",
     "subheading": "副标题",
+    "subheadings": "副标题",
     "subtle_zoom": "缩放",
     "with_hints": "带提示",
     "below_media": "媒体文件下方",
@@ -856,6 +909,7 @@
     "icons": "图标"
   },
   "content": {
+    "dev_mode": "开发者模式",
     "advanced": "高级",
     "background_image": "背景图片",
     "background_video": "背景视频",
@@ -926,6 +980,7 @@
     "colors": "颜色",
     "collection_page": "产品系列页面",
     "customer_account": "客户账户",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "在[模板设置](/editor?context=theme&category=search)中编辑空状态产品系列",
     "grid_layout": "网格布局",
     "home_page": "主页",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>探索我们精心挑选的产品系列，这些热门商品兼具时尚风格与卓越品质。</p>"
   },
   "text_defaults": {
+    "tag": "标签",
     "button_label": "立即购买",
     "collapsible_row": "可折叠行",
     "heading": "标题",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "新品上架"
   },
   "info": {
+    "logo_type": "选择 Logo 使用图片还是 SVG 文件。",
+    "svg_logo_filename": "输入 assets 中的 SVG 文件名，例如 brand。",
+    "custom_condition": "返回 true 显示该分区，否则返回 false。",
+    "dev_mode": "可访问更多选项，尤其是可从设置中注入代码。",
     "video_alt_text": "为使用辅助技术的用户描述视频",
     "video_autoplay": "视频将默认静音",
     "video_external": "使用 YouTube 或 Vimeo URL",

@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "collection_list_Wfgh3m": {
       "type": "main-collection-list",
@@ -15,7 +16,6 @@
           "type": "group",
           "name": "t:names.header",
           "settings": {
-            "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -43,6 +43,7 @@
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "open_in_new_tab": false,
             "padding-block-start": 0,
             "padding-block-end": 48,
             "padding-inline-start": 0,
@@ -53,7 +54,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h1>Collections</h1>",
+                "text": "<h3>Collections</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -76,9 +77,7 @@
               "blocks": {}
             }
           },
-          "block_order": [
-            "text_fRMQMR"
-          ]
+          "block_order": ["text_fRMQMR"]
         },
         "static-collection-card": {
           "type": "_collection-card",
@@ -140,14 +139,10 @@
               "blocks": {}
             }
           },
-          "block_order": [
-            "collection_title_7YgBPU"
-          ]
+          "block_order": ["collection_title_7YgBPU"]
         }
       },
-      "block_order": [
-        "group_4FtiAg"
-      ],
+      "block_order": ["group_4FtiAg"],
       "name": "Collection list",
       "settings": {
         "layout_type": "grid",
@@ -168,7 +163,5 @@
       }
     }
   },
-  "order": [
-    "collection_list_Wfgh3m"
-  ]
+  "order": ["collection_list_Wfgh3m"]
 }

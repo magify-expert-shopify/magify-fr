@@ -9,6 +9,8 @@
  */
 {
   "accessibility": {
+    "logo_home_link": "Logo, link to home page",
+    "home_link": "Go to home page",
     "account": "Account",
     "cart": "Cart",
     "cart_count": "Total items in cart",

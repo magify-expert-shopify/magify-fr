@@ -1,0 +1,27 @@
+{%- liquid
+  assign id = id | default: ''
+  assign name = name | default: ''
+  assign value = value | default: ''
+  assign label = label | default: ''
+  assign checked = checked | default: false
+-%}
+
+<label class="radio-card">
+  <input
+    class="radio-card__input"
+    type="radio"
+    id="{{ id }}"
+    name="{{ name }}"
+    value="{{ value }}"
+    {% if checked %}
+      checked
+    {% endif %}
+  >
+
+  <span class="radio-card__ui">
+    <span class="radio-card__dot"></span>
+    <span class="radio-card__text">
+      {{ label }}
+    </span>
+  </span>
+</label>

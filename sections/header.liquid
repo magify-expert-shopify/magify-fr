@@ -1,10 +1,8 @@
-
-
 {% liquid
-  assign order = 'logo,menu,localization,search,drawer_search,actions'
+  assign order = 'logo,menu,cta,localization,search,drawer_search,actions'
 
   if shop.customer_accounts_enabled
-    assign order = 'drawer_search,logo,menu,localization,search,actions'
+    assign order = 'drawer_search,logo,menu,cta,localization,search,actions'
   endif
 
   assign rows = 'top,bottom' | split: ','
@@ -14,7 +12,10 @@
     assign search_style = 'modal'
   endif
 
-  if section.settings.enable_transparent_header_home and template.name == 'index'
+  if section.settings.enable_transparent_header
+    assign transparent = 'always'
+    assign transparent_color_scheme = 'inverse'
+  elsif section.settings.enable_transparent_header_home and template.name == 'index'
     assign transparent = 'always'
     assign transparent_color_scheme = section.settings.home_color_scheme
   elsif section.settings.enable_transparent_header_product and template.name == 'product'
@@ -59,6 +60,10 @@
     content_for 'block', type: '_header-menu', id: 'header-menu', variant: 'navigation_bar', transparent: transparent
   endcapture
 
+  capture cta
+    content_for 'block', type: '_header-cta', id: 'header-cta'
+  endcapture
+
   capture actions
     render 'header-actions', customer_account_menu: section.settings.customer_account_menu, display_style: section.settings.actions_display_style, section: section
   endcapture
@@ -71,23 +76,23 @@
   if section.settings.localization_position == 'left'
     if section.settings.search_position == 'left'
       if shop.customer_accounts_enabled
-        assign order = 'drawer_search,logo,search,localization,menu,actions'
+        assign order = 'drawer_search,logo,cta,search,localization,menu,actions'
       else
-        assign order = 'logo,search,localization,menu,drawer_search,actions'
+        assign order = 'logo,cta,search,localization,menu,drawer_search,actions'
       endif
     else
       if shop.customer_accounts_enabled
-        assign order = 'drawer_search,logo,localization,menu,search,actions'
+        assign order = 'drawer_search,logo,cta,localization,menu,search,actions'
       else
-        assign order = 'logo,localization,menu,search,drawer_search,actions'
+        assign order = 'logo,cta,localization,menu,search,drawer_search,actions'
       endif
     endif
   else
     if section.settings.search_position == 'left'
       if shop.customer_accounts_enabled
-        assign order = 'drawer_search,logo,search,menu,localization,actions'
+        assign order = 'drawer_search,logo,cta,search,menu,localization,actions'
       else
-        assign order = 'logo,search,menu,localization,drawer_search,actions'
+        assign order = 'logo,cta,search,menu,localization,drawer_search,actions'
       endif
     endif
   endif
@@ -365,6 +370,7 @@
         first: first,
         logo: logo,
         menu: menu,
+        cta: cta,
         actions: actions,
         localization: localization_markup,
         search: search,
@@ -1189,6 +1195,30 @@
     },
     {
       "type": "header",
+      "content": "t:content.cta"
+    },
+    {
+      "type": "select",
+      "id": "cta_position",
+      "label": "t:settings.position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:options.left"
+        },
+        {
+          "value": "center",
+          "label": "t:options.center"
+        },
+        {
+          "value": "right",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "header",
       "content": "t:content.customer_account"
     },
     {
@@ -1559,17 +1589,25 @@
       "id": "color_scheme_transparent",
       "label": "t:settings.inverse",
       "default": "primary",
-      "visible_if": "{{ section.settings.enable_transparent_header_home or section.settings.enable_transparent_header_product or section.settings.enable_transparent_header_collection }}"
+      "visible_if": "{{ section.settings.enable_transparent_header or section.settings.enable_transparent_header_home or section.settings.enable_transparent_header_product or section.settings.enable_transparent_header_collection }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_transparent_header",
+      "label": "t:settings.transparent_background",
+      "default": false
     },
     {
       "type": "header",
-      "content": "t:content.home_page"
+      "content": "t:content.home_page",
+      "visible_if": "{{ section.settings.enable_transparent_header == false }}"
     },
     {
       "type": "checkbox",
       "id": "enable_transparent_header_home",
       "label": "t:settings.transparent_background",
-      "default": false
+      "default": false,
+      "visible_if": "{{ section.settings.enable_transparent_header == false }}"
     },
     {
       "type": "select",
@@ -1586,17 +1624,19 @@
         }
       ],
       "default": "default",
-      "visible_if": "{{ section.settings.enable_transparent_header_home }}"
+      "visible_if": "{{ section.settings.enable_transparent_header == false and section.settings.enable_transparent_header_home }}"
     },
     {
       "type": "header",
-      "content": "t:content.product_page"
+      "content": "t:content.product_page",
+      "visible_if": "{{ section.settings.enable_transparent_header == false }}"
     },
     {
       "type": "checkbox",
       "id": "enable_transparent_header_product",
       "label": "t:settings.transparent_background",
-      "default": false
+      "default": false,
+      "visible_if": "{{ section.settings.enable_transparent_header == false }}"
     },
     {
       "type": "select",
@@ -1613,17 +1653,19 @@
         }
       ],
       "default": "default",
-      "visible_if": "{{ section.settings.enable_transparent_header_product }}"
+      "visible_if": "{{ section.settings.enable_transparent_header == false and section.settings.enable_transparent_header_product }}"
     },
     {
       "type": "header",
-      "content": "t:content.collection_page"
+      "content": "t:content.collection_page",
+      "visible_if": "{{ section.settings.enable_transparent_header == false }}"
     },
     {
       "type": "checkbox",
       "id": "enable_transparent_header_collection",
       "label": "t:settings.transparent_background",
-      "default": false
+      "default": false,
+      "visible_if": "{{ section.settings.enable_transparent_header == false }}"
     },
     {
       "type": "select",
@@ -1640,7 +1682,7 @@
         }
       ],
       "default": "default",
-      "visible_if": "{{ section.settings.enable_transparent_header_collection }}"
+      "visible_if": "{{ section.settings.enable_transparent_header == false and section.settings.enable_transparent_header_collection }}"
     }
   ],
   "presets": []

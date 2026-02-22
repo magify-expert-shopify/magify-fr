@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Przycisk trzeciorzędny",
+    "dev_mode": "Tryb dewelopera",
+    "tag": "Tag",
+    "tag_list": "Lista tagów",
     "404": "404",
     "borders": "Obramowania",
     "collapsible_row": "Zwijany wiersz",
@@ -27,6 +40,7 @@
     "submit_button": "Przycisk przesyłania",
     "grid_layout_selector": "Selektor układu siatki",
     "image": "Obraz",
+    "image_and_videos": "Obrazy i filmy",
     "list_items": "Elementy listy",
     "facets": "Aspekty",
     "variants": "Warianty",
@@ -78,6 +92,8 @@
     "footer_utilities": "Narzędzia stopki",
     "group": "Grupa",
     "header": "Nagłówek",
+    "header_ctas": "CTA nagłówka",
+    "radio_card": "Karta opcji",
     "heading": "Nagłówek",
     "icons": "Ikony",
     "image_with_text": "Obraz z tekstem",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Warstwowy pokaz slajdów"
   },
+  "presets": {
+    "tag": "Tag",
+    "tag_list": "Lista tagów",
+    "radio_card": "Karta opcji"
+  },
   "settings": {
+    "logo_type": "Typ logo",
+    "svg_logo_filename": "Nazwa pliku logo SVG",
+    "aria_label": "Etykieta ARIA",
+    "hide_on_mobile": "Ukryj na urządzeniach mobilnych",
+    "hide_on_desktop": "Ukryj na komputerze",
+    "use_grid_on_mobile": "Użyj siatki na urządzeniach mobilnych",
+    "use_grid_on_desktop": "Użyj siatki na komputerze",
+    "custom_condition": "Warunek niestandardowy",
+    "display_mode": "Tryb wyświetlania",
+    "dev_mode_enabled": "Włącz tryb dewelopera",
+    "list_type": "Typ listy",
+    "disabled": "Wyłączone",
+    "html_tag": "Znacznik HTML",
+    "class": "Klasa",
+    "fetch_priority": "Priorytet ładowania",
+    "name": "Nazwa",
+    "value": "Wartość",
+    "checked": "Domyślnie zaznaczone",
+    "id": "ID",
     "autoplay": "Autoodtwarzanie",
     "background": "Tło",
     "border_radius": "Promień narożnika",
@@ -206,6 +246,7 @@
     "enable_video_looping": "Odtwarzanie wideo w pętli",
     "favicon": "Ikona Favicon",
     "heading": "Nagłówek",
+    "subheadings": "Podtytuł",
     "icon": "Ikona",
     "image_icon": "Ikona obrazu",
     "make_section_full_width": "Ustaw sekcję na pełną szerokość",
@@ -520,6 +561,7 @@
     "gift_card_form": "Formularz karty prezentowej",
     "seller_note_open_by_default": "Domyślnie otwieraj notatkę dla sprzedawcy",
     "add_to_cart_animation": "Dodaj do koszyka",
+    "text_animation_enabled": "Włącz animację tekstu",
     "custom_link": "Własny link",
     "product_custom_property": {
       "heading": "Nagłówek",
@@ -581,6 +623,12 @@
     "actions_display_style": "Styl menu"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Warunek niestandardowy",
+    "all_pages": "Wszystkie strony",
+    "homepage_only": "Tylko strona główna",
+    "ol": "Lista uporządkowana",
+    "ul": "Lista nieuporządkowana",
     "apple": "Apple",
     "arrow": "Strzałka",
     "banana": "Banan",
@@ -617,6 +665,7 @@
     "lock": "Kłódka",
     "map_pin": "Pinezka na mapie",
     "medium": "Średni",
+    "high": "Wysoki",
     "none": "Brak",
     "numbers": "Liczby",
     "nut_free": "Bez orzechów",
@@ -624,6 +673,7 @@
     "paw_print": "Odcisk łapy",
     "pepper": "Papryka",
     "perfume": "Perfumy",
+    "phone": "Telefon",
     "pinterest": "Pinterest",
     "plane": "Samolot",
     "plant": "Roślina",
@@ -650,6 +700,7 @@
     "vimeo": "Vimeo",
     "washing": "Pranie",
     "auto": "Automatyczny",
+    "low": "Niski",
     "default": "Domyślny",
     "fill": "Wypełnienie",
     "fit": "Dopasuj",
@@ -821,6 +872,7 @@
     "body": "Tekst podstawowy",
     "button_primary": "Przycisk podstawowy",
     "button_secondary": "Przycisk dodatkowy",
+    "button_tertiary": "Przycisk trzeciorzędny",
     "compact": "Kompaktowy",
     "crop_to_fit": "Przytnij, aby dopasować",
     "hidden": "Ukryty",
@@ -845,6 +897,7 @@
     "spotlight": "Wyróżnienie",
     "standard": "Standardowy",
     "subheading": "Podtytuł",
+    "subheadings": "Podtytuł",
     "blur": "Rozmycie",
     "lift": "Uniesienie",
     "reveal": "Odsłonięcie",
@@ -856,6 +909,7 @@
     "icons": "Ikony"
   },
   "content": {
+    "dev_mode": "Tryb dewelopera",
     "background_video": "Wideo w tle",
     "describe_the_video_for": "Opisz wideo dla klientów korzystających z czytników ekranu. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Szerokość jest automatycznie optymalizowana pod kątem urządzeń mobilnych.",
@@ -925,6 +979,7 @@
     "colors": "Kolory",
     "collection_page": "Strona kolekcji",
     "customer_account": "Konto klienta",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Edytuj kolekcję pustego stanu w [ustawieniach motywu](/editor?context=theme&category=search)",
     "home_page": "Strona główna",
     "images": "Obrazy",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Odkryj naszą kolekcję starannie wybranych produktów, które są połączeniem stylu i jakości.</p>"
   },
   "text_defaults": {
+    "tag": "Tag",
     "collapsible_row": "Wiersz zwijany",
     "button_label": "Kup teraz",
     "heading": "Nagłówek",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Nowości"
   },
   "info": {
+    "logo_type": "Wybierz, czy logo ma używać obrazu czy pliku SVG.",
+    "svg_logo_filename": "Podaj nazwę pliku SVG w assets, np. brand.",
+    "custom_condition": "Zwróć true, aby wyświetlić sekcję, w przeciwnym razie false.",
+    "dev_mode": "Daje dostęp do większej liczby opcji, w tym możliwości wstrzykiwania kodu z ustawień.",
     "video_alt_text": "Opisz wideo dla użytkowników technologii wspomagających",
     "video_autoplay": "Domyślnie filmy będą wyciszone",
     "video_external": "Użyj adresu URL z YouTube lub Vimeo",

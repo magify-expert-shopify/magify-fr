@@ -1,0 +1,26 @@
+{% comment %}
+  Params:
+  - label
+  - link
+  - style_class
+  - open_new
+{% endcomment %}
+
+{% if label != blank %}
+  {% if link == blank %}
+    <span class="header-ctas__button {{ style_class }} is-disabled" aria-disabled="true">
+      {{ label }}
+    </span>
+  {% else %}
+    <a
+      href="{{ link }}"
+      class="header-ctas__button {{ style_class }}"
+      {% if open_new %}
+        target="_blank"
+        rel="noopener noreferrer"
+      {% endif %}
+    >
+      {{ label }}
+    </a>
+  {% endif %}
+{% endif %}

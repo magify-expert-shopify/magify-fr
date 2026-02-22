@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Botón terciario",
+    "dev_mode": "Modo desarrollador",
+    "tag": "Etiqueta",
+    "tag_list": "Lista de etiquetas",
     "404": "404",
     "borders": "Bordes",
     "collapsible_row": "Fila plegable",
@@ -27,6 +40,7 @@
     "submit_button": "Botón Enviar",
     "grid_layout_selector": "Selector de diseño de cuadrícula",
     "image": "Imagen",
+    "image_and_videos": "Imágenes y videos",
     "list_items": "Elementos de lista",
     "facets": "Facetas",
     "variants": "Variantes",
@@ -76,6 +90,8 @@
     "footer_utilities": "Utilidades del pie de página",
     "group": "Grupo",
     "header": "Encabezado",
+    "header_ctas": "CTA del encabezado",
+    "radio_card": "Tarjeta de opción",
     "heading": "Encabezado",
     "icons": "Íconos",
     "image_with_text": "Imagen con texto",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Presentación de diapositivas en capas"
   },
+  "presets": {
+    "tag": "Etiqueta",
+    "tag_list": "Lista de etiquetas",
+    "radio_card": "Tarjeta de opción"
+  },
   "settings": {
+    "logo_type": "Tipo de logotipo",
+    "svg_logo_filename": "Nombre de archivo del logotipo SVG",
+    "aria_label": "Etiqueta ARIA",
+    "hide_on_mobile": "Ocultar en móvil",
+    "hide_on_desktop": "Ocultar en escritorio",
+    "use_grid_on_mobile": "Usar cuadrícula en móvil",
+    "use_grid_on_desktop": "Usar cuadrícula en escritorio",
+    "custom_condition": "Condición personalizada",
+    "display_mode": "Modo de visualización",
+    "dev_mode_enabled": "Activar modo desarrollador",
+    "list_type": "Tipo de lista",
+    "disabled": "Deshabilitado",
+    "html_tag": "Etiqueta HTML",
+    "class": "Clase",
+    "fetch_priority": "Prioridad de carga",
+    "name": "Nombre",
+    "value": "Valor",
+    "checked": "Seleccionado de forma predeterminada",
+    "id": "ID",
     "alignment": "Alineación",
     "autoplay": "Reproducción automática",
     "background": "Fondo",
@@ -214,6 +254,7 @@
     "gap": "Separación",
     "geometric_translate_y": "Traslación geométrica en Y",
     "heading": "Título",
+    "subheadings": "Subtítulo",
     "icon": "Ícono",
     "image": "Imagen",
     "image_icon": "Ícono de imagen",
@@ -520,6 +561,7 @@
     "gift_card_form": "Formulario de tarjeta de regalo",
     "seller_note_open_by_default": "Abrir la nota para el vendedor de forma predeterminada",
     "add_to_cart_animation": "Agregar al carrito",
+    "text_animation_enabled": "Activar animación de texto",
     "custom_link": "Enlace personalizado",
     "product_custom_property": {
       "heading": "Título",
@@ -581,9 +623,16 @@
     "actions_display_style": "Estilo del menú"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Condición personalizada",
+    "all_pages": "Todas las páginas",
+    "homepage_only": "Solo página de inicio",
+    "ol": "Lista ordenada",
+    "ul": "Lista desordenada",
     "apple": "Apple",
     "arrow": "Flecha",
     "auto": "Auto",
+    "low": "Baja",
     "banana": "Banana",
     "bottle": "Botella",
     "box": "Caja",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "Marcador de mapa",
     "medium": "Mediano",
+    "high": "Alta",
     "none": "Ninguno",
     "numbers": "Números",
     "nut_free": "Sin frutos secos",
@@ -638,6 +688,7 @@
     "paw_print": "Huella de pata",
     "pepper": "Pimienta",
     "perfume": "Perfume",
+    "phone": "Teléfono",
     "pinterest": "Pinterest",
     "plane": "Avión",
     "plant": "Planta",
@@ -824,6 +875,7 @@
     "body": "Cuerpo",
     "button_primary": "Botón principal",
     "button_secondary": "Botón secundario",
+    "button_tertiary": "Botón terciario",
     "crop_to_fit": "Recortar para ajustar",
     "hidden": "Oculto",
     "hint": "Indicación",
@@ -847,6 +899,7 @@
     "social_youtube": "Redes sociales: YouTube",
     "spotlight": "Spotlight",
     "subheading": "Subencabezado",
+    "subheadings": "Subencabezado",
     "lift": "Levantar",
     "scale": "Escalar",
     "subtle_zoom": "Zoom",
@@ -856,6 +909,7 @@
     "icons": "Íconos"
   },
   "content": {
+    "dev_mode": "Modo desarrollador",
     "advanced": "Avanzado",
     "background_image": "Imagen de fondo",
     "background_video": "Video de fondo",
@@ -925,6 +979,7 @@
     "colors": "Colores",
     "collection_page": "Página de colección",
     "customer_account": "Cuenta de cliente",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Edita la colección del estado vacío en [Configuración del tema](/editor?context=theme&category=search)",
     "home_page": "Página de inicio",
     "images": "Imágenes",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Descubre nuestra colección seleccionada con favoritos seleccionados a mano que combinan estilo y calidad.</p>"
   },
   "text_defaults": {
+    "tag": "Etiqueta",
     "button_label": "Comprar ahora",
     "collapsible_row": "Fila plegable",
     "heading": "Título",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Novedades"
   },
   "info": {
+    "logo_type": "Elige si usar una imagen o un archivo SVG para el logotipo.",
+    "svg_logo_filename": "Introduce el nombre del archivo SVG en assets, por ejemplo brand.",
+    "custom_condition": "Devuelve true para mostrar la sección; en caso contrario, false.",
+    "dev_mode": "Obtén acceso a más opciones, incluida la posibilidad de inyectar código desde la configuración.",
     "carousel_layout_on_mobile": "En dispositivos móviles siempre se usa el carrusel",
     "video_alt_text": "Describe el video para personas usuarias de tecnologías de asistencia",
     "video_autoplay": "Los videos estarán silenciados de forma predeterminada",

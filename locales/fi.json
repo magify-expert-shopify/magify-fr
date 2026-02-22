@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "blocks": {
     "load_video": "Lataa video: {{ description }}",
@@ -20,6 +29,8 @@
     "slider_label": "Liukusäädin"
   },
   "accessibility": {
+    "logo_home_link": "Logo, linkki etusivulle",
+    "home_link": "Siirry etusivulle",
     "play_model": "Toista 3D-malli",
     "play_video": "Toista video",
     "unit_price": "Yksikköhinta",

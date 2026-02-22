@@ -1,10 +1,14 @@
+{% capture condition %}
+  {% render 'conditional-display', mode: section.settings.display_mode, condition: section.settings.custom_condition %}
+{% endcapture %}
 
-
-{% capture children %}
+{% if condition contains 'true' %}
+  {% capture children %}
   {% content_for 'blocks' %}
 {% endcapture %}
 
-{% render 'section', section: section, children: children %}
+  {% render 'section', section: section, children: children %}
+{% endif %}
 
 {% schema %}
 {
@@ -418,6 +422,55 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "t:content.dev_mode",
+      "visible_if": "{{ settings.dev_mode_enabled == true }}"
+    },
+    {
+      "type": "select",
+      "id": "display_mode",
+      "label": "t:settings.display_mode",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:options.never"
+        },
+        {
+          "value": "homepage",
+          "label": "t:options.homepage_only"
+        },
+        {
+          "value": "all",
+          "label": "t:options.all_pages"
+        },
+        {
+          "value": "custom",
+          "label": "t:options.custom_condition"
+        }
+      ],
+      "default": "all",
+      "visible_if": "{{ settings.dev_mode_enabled == true }}"
+    },
+    {
+      "type": "liquid",
+      "id": "custom_condition",
+      "label": "t:settings.custom_condition",
+      "info": "t:info.custom_condition",
+      "default": "{% if true %}true{% endif %}",
+      "visible_if": "{{ settings.dev_mode_enabled == true and section.settings.display_mode == 'custom'}}"
+    },
+    { "type": "header", "content": "t:content.advanced" },
+    {
+      "type": "text",
+      "id": "id",
+      "label": "t:settings.id"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "t:settings.class"
     }
   ],
   "presets": [

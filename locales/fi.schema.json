@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Tertiäärinen painike",
+    "dev_mode": "Kehittäjätila",
+    "tag": "Tunniste",
+    "tag_list": "Tunnisteluettelo",
     "404": "404",
     "borders": "Reunukset",
     "collapsible_row": "Supistettava rivi",
@@ -26,6 +39,7 @@
     "submit_button": "Lähetä-painike",
     "grid_layout_selector": "Ruudukkoasettelun valitsin",
     "image": "Kuva",
+    "image_and_videos": "Kuvat ja videot",
     "list_items": "Luettelon kohdat",
     "facets": "Kohdistukset",
     "variants": "Versiot",
@@ -73,6 +87,8 @@
     "footer_utilities": "Alatunnisteen apuohjelmat",
     "group": "Ryhmä",
     "header": "Ylätunniste",
+    "header_ctas": "Ylätunnisteen CTA:t",
+    "radio_card": "Valintakortti",
     "heading": "Otsikko",
     "icons": "Kuvakkeet",
     "image_with_text": "Kuva tekstillä",
@@ -190,7 +206,31 @@
     "product_sku": "SKU-koodi",
     "layered_slideshow": "Kerroksittainen diaesitys"
   },
+  "presets": {
+    "tag": "Tunniste",
+    "tag_list": "Tunnisteluettelo",
+    "radio_card": "Valintakortti"
+  },
   "settings": {
+    "logo_type": "Logon tyyppi",
+    "svg_logo_filename": "SVG-logon tiedostonimi",
+    "aria_label": "ARIA-otsikko",
+    "hide_on_mobile": "Piilota mobiilissa",
+    "hide_on_desktop": "Piilota työpöydällä",
+    "use_grid_on_mobile": "Käytä ruudukkoa mobiilissa",
+    "use_grid_on_desktop": "Käytä ruudukkoa työpöydällä",
+    "custom_condition": "Mukautettu ehto",
+    "display_mode": "Näyttötila",
+    "dev_mode_enabled": "Ota kehittäjätila käyttöön",
+    "list_type": "Luettelotyyppi",
+    "disabled": "Pois käytöstä",
+    "html_tag": "HTML-tagi",
+    "class": "Luokka",
+    "fetch_priority": "Latausprioriteetti",
+    "name": "Nimi",
+    "value": "Arvo",
+    "checked": "Valittu oletuksena",
+    "id": "ID",
     "alignment": "Tasaus",
     "autoplay": "Automaattinen toisto",
     "background": "Tausta",
@@ -214,6 +254,7 @@
     "gap": "Väli",
     "geometric_translate_y": "Geometrinen muunnos Y",
     "heading": "Otsikko",
+    "subheadings": "Väliotsikko",
     "icon": "Kuvake",
     "image": "Kuva",
     "image_icon": "Kuvake (kuva)",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "Avaa viesti myyjälle oletusarvoisesti",
     "gift_card_form": "Lahjakorttilomake",
     "add_to_cart_animation": "Lisää ostoskoriin",
+    "text_animation_enabled": "Ota tekstianimaatio käyttöön",
     "custom_link": "Mukautettu linkki",
     "product_custom_property": {
       "heading": "Otsikko",
@@ -581,9 +623,16 @@
     "actions_display_style": "Valikkotyyli"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Mukautettu ehto",
+    "all_pages": "Kaikki sivut",
+    "homepage_only": "Vain etusivu",
+    "ol": "Järjestetty lista",
+    "ul": "Järjestämätön lista",
     "apple": "Omena",
     "arrow": "Nuoli",
     "auto": "Automaattinen",
+    "low": "Matala",
     "banana": "Banaani",
     "bottle": "Pullo",
     "box": "Laatikko",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "Karttaneula",
     "medium": "Keskikokoinen",
+    "high": "Korkea",
     "none": "Ei mitään",
     "numbers": "Numerot",
     "nut_free": "Pähkinätön",
@@ -638,6 +688,7 @@
     "paw_print": "Tassunjälki",
     "pepper": "Pippuri",
     "perfume": "Hajuvesi",
+    "phone": "Puhelin",
     "pinterest": "Pinterest",
     "plane": "Lentokone",
     "plant": "Kasvi",
@@ -825,6 +876,7 @@
     "body": "Leipäteksti",
     "button_primary": "Ensisijainen painike",
     "button_secondary": "Toissijainen painike",
+    "button_tertiary": "Tertiääripainike",
     "compact": "Kompakti",
     "hidden": "Piilotettu",
     "hint": "Vihje",
@@ -845,6 +897,7 @@
     "spotlight": "Spotlight",
     "standard": "Vakio",
     "subheading": "Alaotsikko",
+    "subheadings": "Alaotsikko",
     "blur": "Sumennus",
     "lift": "Nosto",
     "reveal": "Paljastus",
@@ -856,6 +909,7 @@
     "icons": "Kuvakkeet"
   },
   "content": {
+    "dev_mode": "Kehittäjätila",
     "advanced": "Lisäasetukset",
     "background_image": "Taustakuva",
     "background_video": "Taustavideo",
@@ -928,6 +982,7 @@
     "colors": "Värit",
     "collection_page": "Kokoelmasivu",
     "customer_account": "Asiakastili",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Muokkaa tyhjän tilan kokoelmaa [teeman asetuksissa](/editor?context=theme&category=search)",
     "grid_layout": "Ruudukkoasettelu",
     "home_page": "Etusivu",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Tutustu kuratoituun kokoelmaamme, joka sisältää käsin valittuja suosikkeja, joissa yhdistyvät tyyli ja laatu.</p>"
   },
   "text_defaults": {
+    "tag": "Tunniste",
     "button_label": "Osta nyt",
     "collapsible_row": "Kutistettava rivi",
     "heading": "Otsikko",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Uutuudet"
   },
   "info": {
+    "logo_type": "Valitse käytetäänkö logossa kuvaa vai SVG-tiedostoa.",
+    "svg_logo_filename": "Anna assets-kansion SVG-tiedostonimi, esimerkiksi brand.",
+    "custom_condition": "Palauta true näyttääksesi osion, muuten false.",
+    "dev_mode": "Saat käyttöösi lisää vaihtoehtoja, mukaan lukien mahdollisuus lisätä koodia suoraan asetuksista.",
     "carousel_layout_on_mobile": "Mobiilissa käytetään aina karusellia.",
     "video_alt_text": "Kuvaile video avustavan teknologian käyttäjille",
     "video_autoplay": "Videot mykistetään oletusarvoisesti",

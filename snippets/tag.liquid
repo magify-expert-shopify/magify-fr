@@ -1,0 +1,28 @@
+{%- doc -%}
+  Renders a generic “tag / badge” element.
+
+  @param {string} text - Tag label (required)
+  @param {string} [tag_name] - HTML tag to use: span | li | div | a (default: span)
+  @param {string} [class] - Extra classes appended to base class
+  @param {string} [href] - Link URL (only used  if as == 'a')
+  @param {boolean} [disabled] - If true and as == 'a', renders aria-disabled
+{%- enddoc -%}
+
+{% assign tag_name = tag_name | default: 'span' %}
+
+<{{ tag_name }}
+  class="tag{% if class != blank %} {{ class }}{% endif %}"
+  {% if tag_name == 'a' %}
+    {% if href == blank or disabled %}
+      role="link"
+      aria-disabled="true"
+    {% else %}
+      href="{{ href }}"
+    {% endif %}
+    {% if disabled %}
+      tabindex="-1"
+    {% endif %}
+  {% endif %}
+>
+  {{ text }}
+</{{ tag_name }}>

@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "ปุ่มระดับสาม",
+    "dev_mode": "โหมดนักพัฒนา",
+    "tag": "แท็ก",
+    "tag_list": "รายการแท็ก",
     "404": "404",
     "borders": "เส้นขอบ",
     "collapsible_row": "แถวที่พับเก็บได้",
@@ -26,6 +39,7 @@
     "submit_button": "ปุ่มส่ง",
     "grid_layout_selector": "เครื่องมือเลือกเลย์เอาต์แบบกริด",
     "image": "รูปภาพ",
+    "image_and_videos": "รูปภาพและวิดีโอ",
     "list_items": "รายการ",
     "facets": "หมวดหมู่ตัวกรอง",
     "variants": "ตัวเลือกสินค้า",
@@ -77,6 +91,8 @@
     "footer_utilities": "ยูทิลิตี้ส่วนท้าย",
     "group": "กลุ่ม",
     "header": "ส่วนหัว",
+    "header_ctas": "CTA ส่วนหัว",
+    "radio_card": "การ์ดตัวเลือก",
     "heading": "ส่วนหัวเรื่อง",
     "hero": "ฮีโร่",
     "icons": "ไอคอน",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "สไลด์โชว์แบบซ้อน"
   },
+  "presets": {
+    "tag": "แท็ก",
+    "tag_list": "รายการแท็ก",
+    "radio_card": "การ์ดตัวเลือก"
+  },
   "settings": {
+    "logo_type": "ประเภทโลโก้",
+    "svg_logo_filename": "ชื่อไฟล์โลโก้ SVG",
+    "aria_label": "ป้ายกำกับ ARIA",
+    "hide_on_mobile": "ซ่อนบนมือถือ",
+    "hide_on_desktop": "ซ่อนบนเดสก์ท็อป",
+    "use_grid_on_mobile": "ใช้กริดบนมือถือ",
+    "use_grid_on_desktop": "ใช้กริดบนเดสก์ท็อป",
+    "custom_condition": "เงื่อนไขกำหนดเอง",
+    "display_mode": "โหมดการแสดงผล",
+    "dev_mode_enabled": "เปิดใช้งานโหมดนักพัฒนา",
+    "list_type": "ประเภทรายการ",
+    "disabled": "ปิดใช้งาน",
+    "html_tag": "แท็ก HTML",
+    "class": "คลาส",
+    "fetch_priority": "ลำดับความสำคัญการโหลด",
+    "name": "ชื่อ",
+    "value": "ค่า",
+    "checked": "เลือกไว้โดยค่าเริ่มต้น",
+    "id": "ID",
     "alignment": "การจัดตำแหน่ง",
     "autoplay": "เล่นอัตโนมัติ",
     "background": "พื้นหลัง",
@@ -214,6 +254,7 @@
     "gap": "ช่องว่าง",
     "geometric_translate_y": "การแปลงตำแหน่งแกน Y เชิงเรขาคณิต",
     "heading": "หัวเรื่อง",
+    "subheadings": "หัวเรื่องย่อย",
     "icon": "ไอคอน",
     "image": "รูปภาพ",
     "image_icon": "ไอคอนรูปภาพ",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "เปิดหมายเหตุถึงผู้ขายเป็นค่าเริ่มต้น",
     "gift_card_form": "ฟอร์มบัตรของขวัญ",
     "add_to_cart_animation": "เพิ่มลงในตะกร้าสินค้า",
+    "text_animation_enabled": "เปิดใช้งานแอนิเมชันข้อความ",
     "custom_link": "ลิงก์ที่กำหนดเอง",
     "product_custom_property": {
       "heading": "หัวเรื่อง",
@@ -581,9 +623,16 @@
     "actions_display_style": "รูปแบบเมนู"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "เงื่อนไขกำหนดเอง",
+    "all_pages": "ทุกหน้า",
+    "homepage_only": "หน้าแรกเท่านั้น",
+    "ol": "รายการแบบมีลำดับ",
+    "ul": "รายการแบบไม่มีลำดับ",
     "apple": "Apple",
     "arrow": "ลูกศร",
     "auto": "อัตโนมัติ",
+    "low": "ต่ำ",
     "banana": "กล้วย",
     "bottle": "ขวด",
     "box": "กล่อง",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "หมุดแผนที่",
     "medium": "ปานกลาง",
+    "high": "สูง",
     "none": "ไม่มี",
     "numbers": "ตัวเลข",
     "nut_free": "ไม่มีส่วนผสมของถั่ว",
@@ -638,6 +688,7 @@
     "paw_print": "รอยเท้าสัตว์",
     "pepper": "พริกไทย",
     "perfume": "น้ำหอม",
+    "phone": "โทรศัพท์",
     "pinterest": "Pinterest",
     "plane": "เครื่องบิน",
     "plant": "ต้นไม้",
@@ -822,6 +873,7 @@
     "body": "เนื้อหา",
     "button_primary": "ปุ่มหลัก",
     "button_secondary": "ปุ่มรอง",
+    "button_tertiary": "ปุ่มระดับที่สาม",
     "compact": "กะทัดรัด",
     "crop_to_fit": "ครอบตัดให้พอดี",
     "hidden": "ซ่อน",
@@ -845,6 +897,7 @@
     "spotlight": "Spotlight",
     "standard": "มาตรฐาน",
     "subheading": "หัวเรื่องย่อย",
+    "subheadings": "หัวเรื่องย่อย",
     "blur": "เบลอ",
     "lift": "ยกขึ้น",
     "reveal": "เปิดเผย",
@@ -856,6 +909,7 @@
     "icons": "ไอคอน"
   },
   "content": {
+    "dev_mode": "โหมดนักพัฒนา",
     "advanced": "ขั้นสูง",
     "background_image": "รูปภาพพื้นหลัง",
     "background_video": "วิดีโอพื้นหลัง",
@@ -926,6 +980,7 @@
     "colors": "สี",
     "collection_page": "หน้าคอลเลกชัน",
     "customer_account": "บัญชีผู้ใช้ของลูกค้า",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "แก้ไขคอลเลกชันสถานะว่างใน[การตั้งค่าธีม](/editor?context=theme&category=search)",
     "grid_layout": "เลย์เอาต์แบบกริด",
     "home_page": "หน้าแรก",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>พบกับคอลเลกชันที่เราคัดสรรมาเป็นพิเศษซึ่งมีแต่สินค้ายอดนิยมที่ผสมผสานสไตล์และคุณภาพเข้าไว้ด้วยกัน</p>"
   },
   "text_defaults": {
+    "tag": "แท็ก",
     "button_label": "ช้อปเลย",
     "collapsible_row": "แถวที่พับเก็บได้",
     "heading": "หัวเรื่อง",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "สินค้ามาใหม่"
   },
   "info": {
+    "logo_type": "เลือกว่าจะใช้รูปภาพหรือไฟล์ SVG สำหรับโลโก้",
+    "svg_logo_filename": "ใส่ชื่อไฟล์ SVG ใน assets เช่น brand",
+    "custom_condition": "คืนค่า true เพื่อแสดงเซกชัน มิฉะนั้นคืนค่า false",
+    "dev_mode": "ช่วยให้เข้าถึงตัวเลือกเพิ่มเติม รวมถึงความสามารถในการฉีดโค้ดจากการตั้งค่า",
     "video_alt_text": "โปรดอธิบายวิดีโอสำหรับผู้ใช้เทคโนโลยีความช่วยเหลือพิเศษ",
     "video_autoplay": "วิดีโอจะถูกปิดเสียงตามค่าเริ่มต้น",
     "video_external": "ใช้ URL ของ YouTube หรือ Vimeo",

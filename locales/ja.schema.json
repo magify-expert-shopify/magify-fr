@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "第3ボタン",
+    "dev_mode": "開発者モード",
+    "tag": "タグ",
+    "tag_list": "タグリスト",
     "404": "404",
     "borders": "枠線",
     "collapsible_row": "折りたたみ可能な行",
@@ -27,6 +40,7 @@
     "submit_button": "送信ボタン",
     "grid_layout_selector": "グリッドレイアウトセレクター",
     "image": "画像",
+    "image_and_videos": "画像と動画",
     "list_items": "リストアイテム",
     "facets": "ファセット",
     "variants": "バリエーション",
@@ -78,6 +92,8 @@
     "footer_utilities": "フッターユーティリティ",
     "group": "グループ",
     "header": "ヘッダー",
+    "header_ctas": "ヘッダーCTA",
+    "radio_card": "ラジオカード",
     "heading": "見出し",
     "icons": "アイコン",
     "image_with_text": "テキスト付き画像",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "レイヤースライドショー"
   },
+  "presets": {
+    "tag": "タグ",
+    "tag_list": "タグリスト",
+    "radio_card": "ラジオカード"
+  },
   "settings": {
+    "logo_type": "ロゴの種類",
+    "svg_logo_filename": "SVGロゴのファイル名",
+    "aria_label": "ARIA ラベル",
+    "hide_on_mobile": "モバイルで非表示",
+    "hide_on_desktop": "デスクトップで非表示",
+    "use_grid_on_mobile": "モバイルでグリッドを使用",
+    "use_grid_on_desktop": "デスクトップでグリッドを使用",
+    "custom_condition": "カスタム条件",
+    "display_mode": "表示モード",
+    "dev_mode_enabled": "開発者モードを有効にする",
+    "list_type": "リストタイプ",
+    "disabled": "無効",
+    "html_tag": "HTMLタグ",
+    "class": "クラス",
+    "fetch_priority": "読み込み優先度",
+    "name": "名前",
+    "value": "値",
+    "checked": "デフォルトで選択",
+    "id": "ID",
     "alignment": "配置",
     "autoplay": "自動再生",
     "background": "背景",
@@ -214,6 +254,7 @@
     "gap": "間隔",
     "geometric_translate_y": "幾何学的なY軸移動",
     "heading": "見出し",
+    "subheadings": "小見出し",
     "icon": "アイコン",
     "image": "画像",
     "image_icon": "画像アイコン",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "デフォルトで販売者へのメモを開く",
     "gift_card_form": "ギフトカードフォーム",
     "add_to_cart_animation": "カートに追加",
+    "text_animation_enabled": "テキストアニメーションを有効にする",
     "custom_link": "カスタムリンク",
     "product_custom_property": {
       "heading": "見出し",
@@ -581,9 +623,16 @@
     "actions_display_style": "メニュースタイル"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "カスタム条件",
+    "all_pages": "すべてのページ",
+    "homepage_only": "ホームページのみ",
+    "ol": "番号付きリスト",
+    "ul": "箇条書きリスト",
     "apple": "Apple",
     "arrow": "矢印",
     "auto": "自動",
+    "low": "低",
     "banana": "バナナ",
     "bottle": "ボトル",
     "box": "ボックス",
@@ -629,6 +678,7 @@
     "m": "M",
     "map_pin": "マップピン",
     "medium": "中",
+    "high": "高",
     "none": "なし",
     "numbers": "数字",
     "nut_free": "ナッツ不使用",
@@ -638,6 +688,7 @@
     "paw_print": "足跡",
     "pepper": "コショウ",
     "perfume": "香水",
+    "phone": "電話",
     "pinterest": "Pinterest",
     "plane": "飛行機",
     "plant": "植物",
@@ -822,6 +873,7 @@
     "body": "本文",
     "button_primary": "プライマリーボタン",
     "button_secondary": "セカンダリーボタン",
+    "button_tertiary": "ターシャリーボタン",
     "compact": "コンパクト",
     "crop_to_fit": "切り抜いて合わせる",
     "hidden": "非表示",
@@ -845,6 +897,7 @@
     "spotlight": "スポットライト",
     "standard": "標準",
     "subheading": "小見出し",
+    "subheadings": "小見出し",
     "blur": "ぼかし",
     "lift": "リフト",
     "reveal": "リビール",
@@ -856,6 +909,7 @@
     "icons": "アイコン"
   },
   "content": {
+    "dev_mode": "開発者モード",
     "advanced": "高度な設定",
     "background_image": "背景画像",
     "background_video": "背景動画",
@@ -926,6 +980,7 @@
     "colors": "色",
     "collection_page": "コレクションページ",
     "customer_account": "お客様アカウント",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "[テーマ設定](/editor?context=theme&category=search)で空の状態のコレクションを編集する",
     "home_page": "ホームページ",
     "images": "画像",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>スタイルと品質を両立した、厳選されたお気に入りのアイテムが揃ったコレクションをご覧ください。</p>"
   },
   "text_defaults": {
+    "tag": "タグ",
     "button_label": "今すぐ購入",
     "collapsible_row": "折りたたみ可能な行",
     "heading": "見出し",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "新着商品"
   },
   "info": {
+    "logo_type": "ロゴに画像またはSVGファイルのどちらを使うか選択します。",
+    "svg_logo_filename": "assets 内のSVGファイル名を入力してください（例: brand）。",
+    "custom_condition": "セクションを表示する場合は true、表示しない場合は false を返します。",
+    "dev_mode": "より多くのオプションにアクセスでき、特に設定からコードを挿入できます。",
     "video_alt_text": "支援技術のユーザーのために動画の説明を記述します",
     "video_autoplay": "動画はデフォルトでミュートになります",
     "video_external": "YouTubeまたはVimeoのURLを使用します",

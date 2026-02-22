@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Tertiaire knop",
+    "dev_mode": "Ontwikkelaarsmodus",
+    "tag": "Tag",
+    "tag_list": "Taglijst",
     "404": "404",
     "borders": "Randen",
     "collapsible_row": "Inklapbare rij",
@@ -26,6 +39,7 @@
     "submit_button": "Verzendknop",
     "grid_layout_selector": "Grid-indelingskiezer",
     "image": "Afbeelding",
+    "image_and_videos": "Afbeeldingen en video's",
     "list_items": "Lijstitems",
     "facets": "Facetten",
     "variants": "Varianten",
@@ -77,6 +91,8 @@
     "footer_utilities": "Hulpprogramma's voor voettekst",
     "group": "Groep",
     "header": "Koptekst",
+    "header_ctas": "Header-CTA's",
+    "radio_card": "Keuzekaart",
     "heading": "Kop",
     "icons": "Pictogrammen",
     "image_with_text": "Afbeelding met tekst",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Gelaagde diavoorstelling"
   },
+  "presets": {
+    "tag": "Tag",
+    "tag_list": "Taglijst",
+    "radio_card": "Keuzekaart"
+  },
   "settings": {
+    "logo_type": "Logotype",
+    "svg_logo_filename": "Bestandsnaam SVG-logo",
+    "aria_label": "ARIA-label",
+    "hide_on_mobile": "Verbergen op mobiel",
+    "hide_on_desktop": "Verbergen op desktop",
+    "use_grid_on_mobile": "Raster op mobiel gebruiken",
+    "use_grid_on_desktop": "Raster op desktop gebruiken",
+    "custom_condition": "Aangepaste voorwaarde",
+    "display_mode": "Weergavemodus",
+    "dev_mode_enabled": "Ontwikkelaarsmodus inschakelen",
+    "list_type": "Lijsttype",
+    "disabled": "Uitgeschakeld",
+    "html_tag": "HTML-tag",
+    "class": "Klasse",
+    "fetch_priority": "Laadprioriteit",
+    "name": "Naam",
+    "value": "Waarde",
+    "checked": "Standaard geselecteerd",
+    "id": "ID",
     "autoplay": "Automatisch afspelen",
     "background": "Achtergrond",
     "border_radius": "Hoekradius",
@@ -206,6 +246,7 @@
     "enable_video_looping": "Video herhalen",
     "favicon": "Favicon",
     "heading": "Kop",
+    "subheadings": "Subkop",
     "icon": "Pictogram",
     "image_icon": "Afbeeldingspictogram",
     "make_section_full_width": "Sectie op volledige breedte weergeven",
@@ -520,6 +561,7 @@
     "seller_note_open_by_default": "Notitie aan verkoper standaard openen",
     "gift_card_form": "Cadeaubonformulier",
     "add_to_cart_animation": "Toevoegen aan winkelwagen",
+    "text_animation_enabled": "Tekstanimatie inschakelen",
     "custom_link": "Aangepaste link",
     "product_custom_property": {
       "heading": "Kop",
@@ -581,6 +623,12 @@
     "actions_display_style": "Menustijl"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Aangepaste voorwaarde",
+    "all_pages": "Alle pagina s",
+    "homepage_only": "Alleen homepage",
+    "ol": "Geordende lijst",
+    "ul": "Ongeordende lijst",
     "apple": "Apple",
     "arrow": "Pijl",
     "banana": "Banaan",
@@ -617,6 +665,7 @@
     "lock": "Slot",
     "map_pin": "Kaartspeld",
     "medium": "Medium",
+    "high": "Hoog",
     "none": "Geen",
     "numbers": "Cijfers",
     "nut_free": "Notenvrij",
@@ -624,6 +673,7 @@
     "paw_print": "Pootafdruk",
     "pepper": "Peper",
     "perfume": "Parfum",
+    "phone": "Telefoon",
     "pinterest": "Pinterest",
     "plane": "Vliegtuig",
     "plant": "Plant",
@@ -650,6 +700,7 @@
     "vimeo": "Vimeo",
     "washing": "Wassen",
     "auto": "Automatisch",
+    "low": "Laag",
     "default": "Standaard",
     "fill": "Vullen",
     "fit": "Passend",
@@ -821,6 +872,7 @@
     "body": "Hoofdtekst",
     "button_primary": "Primaire knop",
     "button_secondary": "Secundaire knop",
+    "button_tertiary": "Tertiaire knop",
     "compact": "Compact",
     "crop_to_fit": "Bijsnijden",
     "hidden": "Verborgen",
@@ -845,6 +897,7 @@
     "spotlight": "Spotlight",
     "standard": "Standaard",
     "subheading": "Subkop",
+    "subheadings": "Subkop",
     "blur": "Vervagen",
     "lift": "Optillen",
     "reveal": "Onthullen",
@@ -856,6 +909,7 @@
     "icons": "Pictogrammen"
   },
   "content": {
+    "dev_mode": "Ontwikkelaarsmodus",
     "background_video": "Achtergrondvideo",
     "describe_the_video_for": "Beschrijf de video voor klanten die schermlezers gebruiken. [Meer informatie](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Breedte wordt automatisch geoptimaliseerd voor mobiel.",
@@ -927,6 +981,7 @@
     "colors": "Kleuren",
     "collection_page": "Collectiepagina",
     "customer_account": "Klantaccount",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Lege statuscollectie bewerken in [thema-instellingen](/editor?context=theme&category=search)",
     "grid_layout": "Grid-indeling",
     "home_page": "Homepage",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Ontdek onze samengestelde collectie met zorgvuldig uitgekozen favorieten die stijl en kwaliteit combineren.</p>"
   },
   "text_defaults": {
+    "tag": "Tag",
     "collapsible_row": "Inklapbare rij",
     "button_label": "Shop nu",
     "heading": "Kop",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Nieuw binnen"
   },
   "info": {
+    "logo_type": "Kies of het logo een afbeelding of een SVG-bestand gebruikt.",
+    "svg_logo_filename": "Voer de SVG-bestandsnaam in uit assets, bijvoorbeeld brand.",
+    "custom_condition": "Geef true terug om de sectie te tonen, anders false.",
+    "dev_mode": "Geeft toegang tot meer opties, waaronder de mogelijkheid om code te injecteren vanuit de instellingen.",
     "carousel_layout_on_mobile": "Op mobiel wordt altijd een carrousel gebruikt",
     "video_alt_text": "Beschrijf de video voor gebruikers van ondersteunende technologie",
     "video_autoplay": "Video's worden standaard gedempt",

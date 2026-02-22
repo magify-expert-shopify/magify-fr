@@ -12,6 +12,7 @@
 {%- enddoc -%}
 
 <div
+  id="{{ settings.id }}"
   class="
     group-block
     group-block--height-{{ settings.height }}
@@ -20,6 +21,9 @@
     spacing-style
     size-style
     {% if settings.inherit_color_scheme == false %} color-{{ settings.color_scheme }}{% endif %}
+    {% if settings.hide_on_mobile %} hide-mobile{% endif %}
+    {% if settings.hide_on_desktop %} hide-desktop{% endif %}
+    {{ settings.class }}
     {{ class }}
   "
   style="
@@ -33,6 +37,7 @@
 >
   {%- if settings.link != blank -%}
     <a
+      aria-label="{{ settings.aria_label }}"
       href="{{ settings.link }}"
       class="group-block__link"
       {% if settings.open_in_new_tab %}

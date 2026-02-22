@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "3차 버튼",
+    "dev_mode": "개발자 모드",
+    "tag": "태그",
+    "tag_list": "태그 목록",
     "404": "404",
     "borders": "테두리",
     "collapsible_row": "축소 가능 행",
@@ -27,6 +40,7 @@
     "submit_button": "제출 버튼",
     "grid_layout_selector": "그리드 레이아웃 선택기",
     "image": "이미지",
+    "image_and_videos": "이미지 및 동영상",
     "list_items": "목록 품목",
     "facets": "필터 항목",
     "variants": "이형 상품",
@@ -74,6 +88,8 @@
     "footer_utilities": "바닥글 유틸리티",
     "group": "그룹",
     "header": "머리글",
+    "header_ctas": "헤더 CTA",
+    "radio_card": "라디오 카드",
     "heading": "제목",
     "icons": "아이콘",
     "image_with_text": "텍스트 포함 이미지",
@@ -190,7 +206,31 @@
     "product_sku": "SKU(재고 관리 코드)",
     "layered_slideshow": "레이어드 슬라이드 쇼"
   },
+  "presets": {
+    "tag": "태그",
+    "tag_list": "태그 목록",
+    "radio_card": "라디오 카드"
+  },
   "settings": {
+    "logo_type": "로고 유형",
+    "svg_logo_filename": "SVG 로고 파일명",
+    "aria_label": "ARIA 레이블",
+    "hide_on_mobile": "모바일에서 숨기기",
+    "hide_on_desktop": "데스크톱에서 숨기기",
+    "use_grid_on_mobile": "모바일에서 그리드 사용",
+    "use_grid_on_desktop": "데스크톱에서 그리드 사용",
+    "custom_condition": "사용자 지정 조건",
+    "display_mode": "표시 모드",
+    "dev_mode_enabled": "개발자 모드 활성화",
+    "list_type": "목록 유형",
+    "disabled": "비활성화",
+    "html_tag": "HTML 태그",
+    "class": "클래스",
+    "fetch_priority": "로드 우선순위",
+    "name": "이름",
+    "value": "값",
+    "checked": "기본으로 선택됨",
+    "id": "ID",
     "autoplay": "자동 재생",
     "background": "배경",
     "border_radius": "모서리 반경",
@@ -206,6 +246,7 @@
     "enable_video_looping": "동영상 반복",
     "favicon": "Favicon",
     "heading": "제목",
+    "subheadings": "소제목",
     "icon": "아이콘",
     "image_icon": "이미지 아이콘",
     "make_section_full_width": "섹션을 전체 너비로 만들기",
@@ -521,6 +562,7 @@
     "gift_card_form": "기프트 카드 양식",
     "custom_link": "사용자 지정 링크",
     "add_to_cart_animation": "카트에 추가",
+    "text_animation_enabled": "텍스트 애니메이션 활성화",
     "product_custom_property": {
       "heading": "제목",
       "description": "설명",
@@ -581,6 +623,12 @@
     "actions_display_style": "메뉴 스타일"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "사용자 지정 조건",
+    "all_pages": "모든 페이지",
+    "homepage_only": "홈페이지만",
+    "ol": "순서 있는 목록",
+    "ul": "순서 없는 목록",
     "apple": "Apple",
     "arrow": "화살표",
     "banana": "바나나",
@@ -617,6 +665,7 @@
     "lock": "잠금",
     "map_pin": "지도 핀",
     "medium": "중간",
+    "high": "높음",
     "none": "없음",
     "numbers": "숫자",
     "nut_free": "견과류 미포함",
@@ -624,6 +673,7 @@
     "paw_print": "발자국",
     "pepper": "고추",
     "perfume": "향수",
+    "phone": "전화",
     "pinterest": "Pinterest",
     "plane": "비행기",
     "plant": "식물",
@@ -650,6 +700,7 @@
     "vimeo": "Vimeo",
     "washing": "세탁",
     "auto": "자동",
+    "low": "낮음",
     "default": "기본값",
     "fill": "채우기",
     "fit": "맞춤",
@@ -822,6 +873,7 @@
     "body": "본문",
     "button_primary": "기본 버튼",
     "button_secondary": "보조 버튼",
+    "button_tertiary": "3차 버튼",
     "compact": "컴팩트",
     "crop_to_fit": "잘라서 맞춤",
     "hidden": "숨김",
@@ -845,6 +897,7 @@
     "spotlight": "Spotlight",
     "standard": "표준",
     "subheading": "소제목",
+    "subheadings": "소제목",
     "blur": "블러",
     "lift": "리프트",
     "reveal": "드러내기",
@@ -856,6 +909,7 @@
     "icons": "아이콘"
   },
   "content": {
+    "dev_mode": "개발자 모드",
     "background_video": "배경 비디오",
     "describe_the_video_for": "화면 읽기 프로그램을 사용하는 고객을 위해 비디오에 대해 설명하세요. [자세히 알아보기](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "너비는 모바일에 맞게 자동으로 최적화됩니다.",
@@ -927,6 +981,7 @@
     "colors": "색상",
     "collection_page": "컬렉션 페이지",
     "customer_account": "고객 계정",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "[테마 설정](/editor?context=theme&category=search)에서 빈 상태 컬렉션 편집",
     "home_page": "홈페이지",
     "inverse_logo_info": "투명한 머리글 배경이 반전으로 설정된 경우에 사용됩니다",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>스타일과 품질을 겸비한 엄선된 인기 제품으로 구성된 큐레이션 컬렉션을 만나보세요.</p>"
   },
   "text_defaults": {
+    "tag": "태그",
     "collapsible_row": "축소 가능 행",
     "button_label": "지금 쇼핑하기",
     "heading": "제목",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "신상품"
   },
   "info": {
+    "logo_type": "로고에 이미지 또는 SVG 파일 중 어떤 것을 사용할지 선택하세요.",
+    "svg_logo_filename": "assets의 SVG 파일명을 입력하세요. 예: brand.",
+    "custom_condition": "섹션을 표시하려면 true, 아니면 false를 반환하세요.",
+    "dev_mode": "더 많은 옵션에 접근할 수 있으며, 특히 설정에서 코드를 삽입할 수 있습니다.",
     "carousel_layout_on_mobile": "모바일에서는 항상 캐러셀이 사용됩니다.",
     "video_alt_text": "보조 기술 사용자를 위해 비디오를 설명하세요",
     "video_autoplay": "비디오는 기본적으로 음소거됩니다",

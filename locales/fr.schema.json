@@ -1,5 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "names": {
+    "tertiary_button": "Bouton tertiaire",
+    "dev_mode": "Mode développeur",
+    "tag": "Tag",
+    "tag_list": "Liste de tags",
     "404": "404",
     "borders": "Bordures",
     "collapsible_row": "Rangée réductible",
@@ -27,6 +40,7 @@
     "submit_button": "Bouton Soumettre",
     "grid_layout_selector": "Sélecteur de mise en page en grille",
     "image": "Image",
+    "image_and_videos": "Images et vidéos",
     "list_items": "Éléments de liste",
     "facets": "Facettes",
     "variants": "Variantes",
@@ -75,6 +89,8 @@
     "footer_utilities": "Utilitaires du pied de page",
     "group": "Groupe",
     "header": "En-tête",
+    "header_ctas": "CTA de l'en-tête",
+    "radio_card": "Carte radio",
     "heading": "Titre",
     "icons": "Icônes",
     "image_with_text": "Image avec texte",
@@ -190,7 +206,31 @@
     "product_sku": "SKU",
     "layered_slideshow": "Diaporama superposé"
   },
+  "presets": {
+    "tag": "Tag",
+    "tag_list": "Liste de tags",
+    "radio_card": "Carte radio"
+  },
   "settings": {
+    "logo_type": "Type de logo",
+    "svg_logo_filename": "Nom de fichier du logo SVG",
+    "aria_label": "Libellé ARIA",
+    "hide_on_mobile": "Masquer sur mobile",
+    "hide_on_desktop": "Masquer sur ordinateur",
+    "use_grid_on_mobile": "Utiliser la grille sur mobile",
+    "use_grid_on_desktop": "Utiliser la grille sur ordinateur",
+    "custom_condition": "Condition personnalisée",
+    "display_mode": "Mode d'affichage",
+    "dev_mode_enabled": "Activer le mode développeur",
+    "list_type": "Type de liste",
+    "disabled": "Désactivé",
+    "html_tag": "Balise HTML",
+    "class": "Classe",
+    "fetch_priority": "Priorité de chargement",
+    "name": "Nom",
+    "value": "Valeur",
+    "checked": "Sélectionné par défaut",
+    "id": "ID",
     "autoplay": "Lecture automatique",
     "background": "Arrière-plan",
     "border_radius": "Rayon de la bordure",
@@ -206,6 +246,7 @@
     "enable_video_looping": "Vidéo en boucle",
     "favicon": "Favicon",
     "heading": "Titre",
+    "subheadings": "Sous-titre",
     "icon": "Icône",
     "image_icon": "Icône d'image",
     "make_section_full_width": "Afficher la section en pleine largeur",
@@ -520,6 +561,7 @@
     "gift_card_form": "Formulaire de carte-cadeau",
     "seller_note_open_by_default": "Ouvrir la note au vendeur par défaut",
     "add_to_cart_animation": "Ajouter au panier",
+    "text_animation_enabled": "Activer l'animation du texte",
     "custom_link": "Lien personnalisé",
     "product_custom_property": {
       "heading": "Titre",
@@ -581,6 +623,12 @@
     "actions_display_style": "Style de menu"
   },
   "options": {
+    "svg": "SVG",
+    "custom_condition": "Condition personnalisée",
+    "all_pages": "Toutes les pages",
+    "homepage_only": "Page d'accueil uniquement",
+    "ol": "Liste ordonnée",
+    "ul": "Liste non ordonnée",
     "apple": "Pomme",
     "arrow": "Flèche",
     "banana": "Banane",
@@ -617,6 +665,7 @@
     "lock": "Cadenas",
     "map_pin": "Épingle de carte",
     "medium": "Moyen",
+    "high": "Élevée",
     "none": "Aucun",
     "numbers": "Nombres",
     "nut_free": "Sans noix",
@@ -624,6 +673,7 @@
     "paw_print": "Empreinte de patte",
     "pepper": "Poivre",
     "perfume": "Parfum",
+    "phone": "Téléphone",
     "pinterest": "Pinterest",
     "plane": "Avion",
     "plant": "Plante",
@@ -650,6 +700,7 @@
     "vimeo": "Vimeo",
     "washing": "Lavage",
     "auto": "Automatique",
+    "low": "Faible",
     "default": "Par défaut",
     "fill": "Remplir",
     "fit": "Ajuster",
@@ -823,6 +874,7 @@
     "body": "Corps de texte",
     "button_primary": "Bouton principal",
     "button_secondary": "Bouton secondaire",
+    "button_tertiary": "Bouton tertiaire",
     "crop_to_fit": "Recadrer pour ajuster",
     "hidden": "Masqué",
     "hint": "Indice",
@@ -845,6 +897,7 @@
     "social_youtube": "Social : YouTube",
     "spotlight": "Spotlight",
     "subheading": "Sous-titre",
+    "subheadings": "Sous-titre",
     "blur": "Flou",
     "lift": "Soulever",
     "reveal": "Révéler",
@@ -856,6 +909,7 @@
     "icons": "Icônes"
   },
   "content": {
+    "dev_mode": "Mode développeur",
     "background_video": "Vidéo de fond",
     "describe_the_video_for": "Décrivez la vidéo pour les clients qui utilisent des lecteurs d’écran. [En savoir plus](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "La largeur est automatiquement optimisée pour les appareils mobiles.",
@@ -926,6 +980,7 @@
     "colors": "Couleurs",
     "collection_page": "Page de collection",
     "customer_account": "Compte client",
+    "cta": "CTA",
     "edit_empty_state_collection_in_theme_settings": "Modifier la collection pour état vide dans les [paramètres du thème](/editor?context=theme&category=search)",
     "grid_layout": "Mise en page en grille",
     "home_page": "Page d’accueil",
@@ -1030,6 +1085,7 @@
     "shop_collection": "<p>Découvrez notre collection exclusive, qui comprend des articles triés sur le volet alliant style et qualité.</p>"
   },
   "text_defaults": {
+    "tag": "Tag",
     "collapsible_row": "Rangée réductible",
     "button_label": "Acheter maintenant",
     "heading": "Titre",
@@ -1067,6 +1123,10 @@
     "new_arrivals": "Nouveautés"
   },
   "info": {
+    "logo_type": "Choisissez si le logo utilise une image ou un fichier SVG.",
+    "svg_logo_filename": "Indiquez le nom du fichier SVG dans assets, par exemple brand.",
+    "custom_condition": "Retournez true pour afficher la section, sinon false.",
+    "dev_mode": "Donne accès à plus d’options, notamment la possibilité d’injecter du code depuis les paramètres.",
     "carousel_layout_on_mobile": "Le carrousel est toujours utilisé sur mobile",
     "video_alt_text": "Décrivez la vidéo pour les utilisateurs de technologies d’assistance",
     "video_autoplay": "Les vidéos seront mises en sourdine par défaut",

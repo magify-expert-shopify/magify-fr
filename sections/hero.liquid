@@ -1,5 +1,3 @@
-
-
 {% liquid
   assign media_count = 0
   assign media_count_mobile = 0
@@ -107,7 +105,7 @@
   assign mobile_widths = '416, 600, 800, 1200, 1600'
   assign mobile_widths_array = mobile_widths | split: ', '
 
-  assign fetch_priority = 'auto'
+  assign fetch_priority = settings.fetch_priority
 
   if section.index == 1
     assign fetch_priority = 'high'

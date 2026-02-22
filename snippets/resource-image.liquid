@@ -10,6 +10,7 @@
   @param {object} block_settings - Block settings object
   @param {object} [section_settings] - Section settings for layout-aware sizing
   @param {string} [block_attributes] - Block shopify attributes for theme editor
+  @param {string} [image_sizes] - Optional responsive sizes attribute
 
   @example
   {% render 'resource-image',
@@ -76,12 +77,16 @@
   endif
 
   # Generate responsive image attributes
+  assign sizes_override = image_sizes | default: blank
   assign sizes = '(min-width: 750px) 50vw, 100vw'
+  if sizes_override != blank
+    assign sizes = sizes_override
+  endif
   assign lazy_sizes = 'auto, ' | append: sizes
   assign loading = 'eager'
 
   # Layout-aware sizing for resource lists
-  if section_settings.layout_type
+  if sizes_override == blank and section_settings.layout_type
     case section_settings.layout_type
       when 'grid', 'carousel'
         assign calculated_width = 100 | divided_by: section_settings.columns | append: 'vw'

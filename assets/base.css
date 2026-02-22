@@ -959,8 +959,8 @@ a {
 }
 
 /* Add underline to text using our paragraph styles only. */
-p:not(.h1, .h2, .h3, .h4, .h5, .h6) a:where(:not(.button, .button-secondary)),
-.rte :is(p, ul, ol, table):not(.h1, .h2, .h3, .h4, .h5, .h6) a:where(:not(.button, .button-secondary)) {
+p:not(.h1, .h2, .h3, .h4, .h5, .h6) a:where(:not(.button, .button-secondary, .button-tertiary)),
+.rte :is(p, ul, ol, table):not(.h1, .h2, .h3, .h4, .h5, .h6) a:where(:not(.button, .button-secondary, .button-tertiary)) {
   text-decoration-color: currentcolor;
 
   &:hover {
@@ -1345,6 +1345,7 @@ results-list[initialized] {
 /* Buttons */
 .button,
 .button-secondary,
+.button-tertiary,
 button.shopify-payment-button__button--unbranded {
   --text-align: center;
 
@@ -1378,7 +1379,7 @@ button.shopify-payment-button__button--unbranded {
   border-radius: var(--style-border-radius-buttons-primary);
 }
 
-.button:not(.button-secondary, .button-unstyled) {
+.button:not(.button-secondary, .button-tertiary, .button-unstyled) {
   outline-color: var(--button-background-color);
 }
 
@@ -1386,6 +1387,12 @@ button.shopify-payment-button__button--unbranded {
   font-family: var(--button-font-family-secondary);
   text-transform: var(--button-text-case-secondary);
   border-radius: var(--style-border-radius-buttons-secondary);
+}
+
+.button-tertiary {
+  font-family: var(--button-font-family-tertiary);
+  text-transform: var(--button-text-case-tertiary);
+  border-radius: var(--style-border-radius-buttons-tertiary);
 }
 
 button.shopify-payment-button__button--unbranded {
@@ -1416,6 +1423,7 @@ input:not(:placeholder-shown)::placeholder {
 
 .button[aria-disabled='true'],
 .button-secondary[aria-disabled='true'],
+.button-tertiary[aria-disabled='true'],
 .button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -1443,10 +1451,23 @@ button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
   --button-border-width: var(--style-border-width-secondary);
 }
 
+.button-tertiary {
+  --button-color: var(--color-tertiary-button-text);
+  --button-background-color: var(--color-tertiary-button-background);
+  --button-border-color: var(--color-tertiary-button-border);
+  --button-border-width: var(--style-border-width-tertiary);
+}
+
 .button-secondary:hover {
   --button-color: var(--color-secondary-button-hover-text);
   --button-background-color: var(--color-secondary-button-hover-background);
   --button-border-color: var(--color-secondary-button-hover-border);
+}
+
+.button-tertiary:hover {
+  --button-color: var(--color-tertiary-button-hover-text);
+  --button-background-color: var(--color-tertiary-button-hover-background);
+  --button-border-color: var(--color-tertiary-button-hover-border);
 }
 
 /* Needed to override the default Shopify styles */
@@ -1524,7 +1545,7 @@ shopify-accelerated-checkout-cart {
   --shopify-accelerated-checkout-button-block-size: var(--height-buy-buttons);
 }
 
-.product-form-buttons:has(.add-to-cart-button.button-secondary)
+.product-form-buttons:has(.add-to-cart-button.button-secondary, .add-to-cart-button.button-tertiary)
   :is(shopify-accelerated-checkout, shopify-accelerated-checkout-cart) {
   --shopify-accelerated-checkout-button-border-radius: var(--style-border-radius-buttons-secondary);
   --shopify-accelerated-checkout-button-block-size: var(--height-buy-buttons);
@@ -3287,7 +3308,7 @@ label:has(input[type='checkbox']:disabled) {
   }
 }
 
-.product-form-buttons:has(.add-to-cart-button.button-secondary) .quantity-selector {
+.product-form-buttons:has(.add-to-cart-button.button-secondary, .add-to-cart-button.button-tertiary) .quantity-selector {
   border-radius: var(--style-border-radius-buttons-secondary);
 }
 

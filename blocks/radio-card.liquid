@@ -1,0 +1,41 @@
+{% render 'radio-card',
+  name: block.settings.name,
+  value: block.settings.value,
+  label: block.settings.label,
+  checked: block.settings.checked
+%}
+
+{% schema %}
+{
+  "name": "t:names.radio_card",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "name",
+      "label": "t:settings.name"
+    },
+    {
+      "type": "text",
+      "id": "value",
+      "label": "t:settings.value"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "label",
+      "label": "t:settings.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "checked",
+      "label": "t:settings.checked"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:presets.radio_card",
+      "category": "Magify"
+    }
+  ]
+}
+{% endschema %}

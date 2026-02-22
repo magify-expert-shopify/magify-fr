@@ -1,0 +1,69 @@
+{% render 'tag',
+  text: block.settings.text,
+  tag_name: block.settings.tag_name,
+  class: block.settings.class,
+  href: block.settings.href,
+  disabled: block.settings.disabled
+%}
+
+{% schema %}
+{
+  "name": "t:names.tag",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "t:settings.text",
+      "default": "t:text_defaults.tag"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "t:settings.class"
+    },
+    {
+      "type": "select",
+      "id": "tag_name",
+      "label": "t:settings.html_tag",
+      "options": [
+        {
+          "value": "span",
+          "label": "span"
+        },
+        {
+          "value": "li",
+          "label": "li"
+        },
+        {
+          "value": "div",
+          "label": "div"
+        },
+        {
+          "value": "a",
+          "label": "a"
+        }
+      ],
+      "default": "span"
+    },
+    {
+      "type": "url",
+      "id": "href",
+      "label": "t:settings.link",
+      "visible_if": "{{ block.settings.tag_name == 'a' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "disabled",
+      "label": "t:settings.disabled",
+      "default": false,
+      "visible_if": "{{ block.settings.tag_name == 'a' }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:presets.tag"
+    }
+  ]
+}
+{% endschema %}

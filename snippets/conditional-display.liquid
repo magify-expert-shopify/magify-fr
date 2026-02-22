@@ -1,0 +1,39 @@
+{%- doc -%}
+  Computes whether a section should be displayed based on a mode + optional custom Liquid.
+
+  @param {string} mode - none | homepage | all | custom
+  @param {string} [condition] - Liquid output expected to resolve to "true"/"1"/"yes" when mode == custom
+
+  @returns {string} - "true" or "false" (intended to be captured)
+{%- enddoc -%}
+
+{% liquid
+  assign result = true
+
+  case mode
+    when 'none'
+      assign result = false
+
+    when 'homepage'
+      unless template == 'index'
+        assign result = false
+      endunless
+
+    when 'all'
+      assign result = true
+
+    when 'custom'
+      assign result = false
+
+      capture out
+        echo condition
+      endcapture
+
+      assign out = out | strip | downcase
+      if out == 'true' or out == '1' or out == 'yes'
+        assign result = true
+      endif
+  endcase
+
+  echo result
+%}
