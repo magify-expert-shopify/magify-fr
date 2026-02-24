@@ -44,7 +44,7 @@
     "type_font_h6": "subheading",
     "type_size_h6": "12",
     "type_line_height_h6": "display-loose",
-    "page_width": "narrow",
+    "page_width_preset": "narrow",
     "text_animation_enabled": false,
     "badge_position": "top-right",
     "badge_corner_radius": 100,

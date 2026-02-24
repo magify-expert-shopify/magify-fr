@@ -1441,8 +1441,8 @@
     "settings": [
       {
         "type": "select",
-        "id": "page_width",
-        "label": "t:settings.page_width",
+        "id": "page_width_preset",
+        "label": "t:settings.page_width_preset",
         "options": [
           {
             "value": "narrow",
@@ -1455,9 +1455,24 @@
           {
             "value": "wide",
             "label": "t:options.wide"
+          },
+          {
+            "value": "custom",
+            "label": "t:options.custom"
           }
         ],
         "default": "narrow"
+      },
+      {
+        "type": "range",
+        "id": "page_width_size",
+        "label": "t:settings.page_width_size",
+        "min": 1300,
+        "max": 2400,
+        "step": 20,
+        "unit": "px",
+        "default": 1920,
+        "visible_if": "{{ settings.page_width_preset == 'custom' }}"
       }
     ]
   },

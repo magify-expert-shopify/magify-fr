@@ -69,7 +69,7 @@
         if section.settings.section_width == 'full-width'
           assign sizes = '100vw'
         else
-          case settings.page_width
+          case settings.page_width_preset
             when 'narrow'
               # Narrow: max 90rem (1440px)
               assign sizes = '(min-width: 1440px) 1440px, 100vw'
@@ -79,6 +79,10 @@
             when 'wide'
               # Wide: max 150rem (2400px)
               assign sizes = '(min-width: 2400px) 2400px, 100vw'
+            when 'custom'
+              # Custom
+              assign custom_width = settings.page_width_size | default: 1920
+              assign sizes = '(min-width: ' | append: custom_width | append: 'px) ' | append: custom_width | append: 'px, 100vw'
             else
               # Fallback to full width
               assign sizes = '100vw'

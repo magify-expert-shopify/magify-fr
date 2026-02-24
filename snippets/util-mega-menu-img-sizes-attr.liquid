@@ -31,7 +31,7 @@
   endif
 
   # Define breakpoints and max widths based on page width setting
-  case settings.page_width
+  case settings.page_width_preset
     when 'narrow'
       assign page_max_width = '90rem'
       assign breakpoint = '95rem'
@@ -41,6 +41,12 @@
     when 'wide'
       assign page_max_width = '150rem'
       assign breakpoint = '155rem'
+    when 'custom'
+      assign custom_width_px = settings.page_width_size | default: 1920
+      assign custom_width_rem = custom_width_px | divided_by: 16.0
+      assign page_max_width = custom_width_rem | append: 'rem'
+      assign breakpoint_rem = custom_width_rem | plus: 5
+      assign breakpoint = breakpoint_rem | append: 'rem'
   endcase
 
   # Common values
